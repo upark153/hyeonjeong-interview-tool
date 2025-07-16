@@ -1,0 +1,4224 @@
+/* 터치 디바이스에서 버튼 크기 증가 */
+        @media (max-width: 768px) {
+            .close-example,
+            .close-answer {
+                width: 40px !important;
+                height: 40px !important;
+                font-size: 20px !important;
+                line-height: 40px !important;
+            }
+            
+            .small-menu-btn {
+                padding: 8px 10px !important;
+                font-size: 0.7em !important;
+                min-height: 36px !important;
+            }
+            
+            .action-btn {
+                padding: 12px 8px !important;
+                font-size: 0.75em !important;
+                min-height: 44px !important;
+            }
+        }        /* 모바일 최적화 - 가로 화면에서 답변 패널들 좌우 배치 */
+        @media screen and (orientation: landscape) and (max-height: 500px) {
+            .example-answer-bubble {
+                top: 65px;
+                bottom: 55px;
+                left: 5px;
+                right:<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <!-- PWA 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="전북대 사서직 면접">
+    <meta name="theme-color" content="#3498db">
+    <meta name="description" content="전북대학교 사서직 3D 가상 면접 시뮬레이터">
+    
+    <!-- 아이콘 설정 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjE4MCIgaGVpZ2h0PSIxODAiIHJ4PSIyMCIgZmlsbD0iIzM0OThkYiIvPjx0ZXh0IHg9IjkwIiB5PSIxMTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjYwIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiI+8J+OrzwvdGV4dD48L3N2Zz4=">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI0IiBmaWxsPSIjMzQ5OGRiIi8+PHRleHQgeD0iMTYiIHk9IjIyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNmZmYiPvCfjq88L3RleHQ+PC9zdmc+">
+    
+    <!-- PWA 설정 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="전북대 사서직 면접">
+    <meta name="theme-color" content="#3498db">
+    <meta name="description" content="전북대학교 사서직 3D 가상 면접 시뮬레이터">
+    
+    <!-- 아이콘 설정 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIiByeD0iMjAiIGZpbGw9IiMzNDk4ZGIiLz4KPHN2ZyB4PSI0MCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZmlsbD0iI2ZmZiI+Cjx0ZXh0IHg9IjUwIiB5PSI2MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNDAiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZmZmIj7yjZ88L3RleHQ+Cjwvc3ZnPgo8L3N2Zz4K">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzM0OThkYiIvPgo8dGV4dCB4PSIxNiIgeT0iMjIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiI+8o2fPC90ZXh0Pgo8L3N2Zz4K">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIu2bhOqxteyXreydtO2Vmeq1kCDsgqzshJzsp4EgM0Qg6rCA7IOB66y47KCRIOyLnOuqsOugiO2EsCIsCiAgInNob3J0X25hbWUiOiAi7J207KCR7Iuc66qw66CI7EQiLAogICJzdGFydF91cmwiOiAiLiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgInRoZW1lX2NvbG9yIjogIiMzNDk4ZGIiLAogICJiYWNrZ3Jv<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>전북대학교 사서직 면접</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            height: 100vh;
+            overflow: hidden;
+            color: #333;
+            touch-action: manipulation;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            padding: 8px 15px;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .header-timer {
+            background: rgba(52, 152, 219, 0.9);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.9em;
+            backdrop-filter: blur(10px);
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .interview-info {
+            font-size: 0.75em;
+            color: #e74c3c;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        .header-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .small-menu {
+            display: flex;
+            gap: 4px;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        .small-menu-btn {
+            background: rgba(52, 152, 219, 0.8);
+            color: white;
+            border: none;
+            padding: 5px 8px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.65em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            flex: 1;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .small-menu-btn:hover, .small-menu-btn:active {
+            background: rgba(41, 128, 185, 1);
+            transform: scale(0.95);
+        }
+
+        .small-menu-btn.active {
+            background: rgba(231, 76, 60, 0.8);
+        }
+
+        .main-container {
+            height: 100vh;
+            padding-top: 85px;
+            position: relative;
+        }
+
+        #canvas-container {
+            width: 100%;
+            height: calc(100vh - 85px);
+            position: relative;
+            touch-action: pan-x pan-y;
+        }
+
+        /* 상태 표시 */
+        .status-displays {
+            position: fixed;
+            top: 90px;
+            left: 15px;
+            z-index: 200;
+        }
+
+        .interview-status {
+            background: rgba(46, 204, 113, 0.9);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-weight: bold;
+            backdrop-filter: blur(10px);
+            font-size: 0.75em;
+        }
+
+        /* 사용자 ID 모달 스타일 */
+        .user-id-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 90%;
+            width: 400px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: modalAppear 0.3s ease-out;
+        }
+
+        @keyframes modalAppear {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        // window 객체에 함수 등록 (updateAnswerButtonState 함수 정의 후)
+        window.updateAnswerButtonState = updateAnswerButtonState;
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .modal-header h3 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .close-modal {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-body {
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .current-id-section {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .id-display {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .id-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .new-id-section,
+        .load-id-section {
+            background: rgba(52, 73, 94, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .new-id-section h4,
+        .load-id-section h4 {
+            color: #2c3e50;
+            margin: 0 0 10px 0;
+            font-size: 0.95em;
+        }
+
+        .modal-btn {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 2px;
+        }
+
+        .modal-btn:hover, .modal-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+        }
+
+        .modal-btn.primary {
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+        }
+
+        .modal-btn.secondary {
+            background: linear-gradient(45deg, #95a5a6, #7f8c8d);
+        }
+
+        .modal-btn.share {
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+        }
+
+        .modal-btn.danger {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+        }
+
+        #newIdInput,
+        #loadIdInput {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #34495e;
+            border-radius: 8px;
+            font-size: 0.9em;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .id-help {
+            background: linear-gradient(45deg, #9b59b6, #8e44ad);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 0.8em;
+        }
+
+        .id-help p {
+            margin: 4px 0;
+        }
+
+        /* 모바일 최적화 */
+        @media screen and (max-width: 400px) {
+            .modal-content {
+                max-width: 95%;
+                padding: 15px;
+            }
+            
+            .modal-btn {
+                font-size: 0.75em;
+                padding: 6px 12px;
+            }
+            
+            .id-actions {
+                flex-direction: column;
+            }
+        }
+
+        /* 정보 패널들 */
+        .info-panel {
+            position: fixed;
+            top: 90px;
+            left: 10px;
+            right: 10px;
+            bottom: 70px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            z-index: 300;
+            display: none;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .info-panel.active {
+            display: block;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .panel-header h3 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* X 버튼 스타일 개선 - 클릭하기 쉽게 */
+        .close-example,
+        .close-answer {
+            background: rgba(231, 76, 60, 0.8) !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 50% !important;
+            width: 28px !important;
+            height: 28px !important;
+            cursor: pointer !important;
+            font-size: 16px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-weight: bold !important;
+            transition: all 0.3s ease !important;
+            z-index: 1001 !important;
+            position: relative !important;
+        }
+
+        .close-example:hover,
+        .close-example:active,
+        .close-answer:hover,
+        .close-answer:active {
+            background: rgba(192, 57, 43, 1) !important;
+            transform: scale(1.1) !important;
+        }
+
+        /* 강제 숨김 클래스 - 가장 높은 우선순위 */
+        .force-hidden {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            z-index: -9999 !important;
+            pointer-events: none !important;
+            position: absolute !important;
+            left: -9999px !important;
+            top: -9999px !important;
+        }
+
+        /* 숨김 클래스 추가 */
+        .hidden {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            z-index: -1 !important;
+            pointer-events: none !important;
+        }
+
+        /* 모범답변 말풍선들 - 강력한 스타일 적용 */
+        .example-answer-bubble {
+            position: fixed !important;
+            top: 90px !important;
+            left: 10px !important;
+            right: 50% !important;
+            bottom: 180px !important;
+            background: rgba(255, 248, 220, 0.95) !important;
+            color: #2c3e50 !important;
+            padding: 12px 15px !important;
+            border-radius: 15px !important;
+            backdrop-filter: blur(20px) !important;
+            z-index: 160 !important;
+            animation: bubbleAppear 0.5s ease-in-out !important;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3) !important;
+            border: 2px solid rgba(255, 193, 7, 0.5) !important;
+            font-size: 0.8em !important;
+            line-height: 1.4 !important;
+            overflow-y: auto !important;
+            margin-right: 5px !important;
+            display: none !important;
+        }
+
+        .example-answer-bubble.show {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+
+        .my-answer-bubble {
+            position: fixed !important;
+            top: 90px !important;
+            left: 50% !important;
+            right: 10px !important;
+            bottom: 180px !important;
+            background: rgba(232, 245, 255, 0.95) !important;
+            color: #2c3e50 !important;
+            padding: 12px 15px !important;
+            border-radius: 15px !important;
+            backdrop-filter: blur(20px) !important;
+            z-index: 160 !important;
+            animation: bubbleAppear 0.5s ease-in-out !important;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3) !important;
+            border: 2px solid rgba(52, 152, 219, 0.5) !important;
+            font-size: 0.8em !important;
+            line-height: 1.4 !important;
+            overflow-y: auto !important;
+            margin-left: 5px !important;
+            display: none !important;
+        }
+
+        .my-answer-bubble.show {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+
+        .expert-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .expert-name {
+            font-weight: bold;
+            color: #f39c12;
+            font-size: 0.8em;
+            flex: 1;
+        }
+
+        .close-example {
+            background: rgba(243, 156, 18, 0.2);
+            border: none;
+            color: #f39c12;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .show-example-btn {
+            background: rgba(243, 156, 18, 0.2);
+            border: none;
+            color: #f39c12;
+            padding: 4px 8px;
+            border-radius: 10px;
+            font-size: 0.7em;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        .show-example-btn:hover, .show-example-btn:active {
+            background: rgba(243, 156, 18, 0.4);
+        }
+        /* 말풍선들 - 투명도 개선 */
+        .speech-bubble {
+            position: fixed;
+            bottom: 70px;
+            left: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.85);
+            color: #2c3e50;
+            padding: 12px 15px;
+            border-radius: 15px;
+            backdrop-filter: blur(20px);
+            z-index: 150;
+            animation: bubbleAppear 0.5s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(52, 152, 219, 0.3);
+            font-size: 0.8em;
+            line-height: 1.4;
+            max-height: 25vh;
+            overflow-y: auto;
+        }
+
+        /* bubble-header 스타일 개선 - 버튼이 잘 보이도록 */
+        .bubble-header,
+        .answer-bubble-header {
+            display: flex !important;
+            align-items: center !important;
+            margin-bottom: 8px !important;
+            padding-bottom: 6px !important;
+            border-bottom: 1px solid rgba(224, 224, 224, 0.7) !important;
+            gap: 8px !important;
+        }
+
+        .expert-name,
+        .answer-title {
+            flex: 1 !important;
+        }
+
+        .interviewer-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .interviewer-name {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 0.8em;
+        }
+
+        .answer-bubble {
+            position: fixed;
+            top: 90px;
+            left: 10px;
+            right: 10px;
+            bottom: 180px;
+            background: rgba(255, 255, 255, 0.88);
+            color: #2c3e50;
+            padding: 12px 15px;
+            border-radius: 15px;
+            backdrop-filter: blur(20px);
+            z-index: 250;
+            animation: bubbleAppear 0.5s ease-in-out;
+            display: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(52, 152, 219, 0.3);
+            font-size: 0.8em;
+            line-height: 1.4;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .answer-bubble-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .interviewee-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #9b59b6, #8e44ad);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .answer-title {
+            font-weight: bold;
+            color: #3498db;
+            font-size: 0.85em;
+            flex: 1;
+        }
+
+        .close-answer {
+            background: rgba(52, 152, 219, 0.2);
+            border: none;
+            color: #3498db;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .edit-answer-btn {
+            background: rgba(52, 152, 219, 0.2);
+            border: none;
+            color: #3498db;
+            padding: 4px 8px;
+            border-radius: 10px;
+            font-size: 0.7em;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+
+        /* 답변 편집 모드 */
+        .answer-edit-mode {
+            margin-top: 10px;
+        }
+
+        .answer-edit-textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 8px;
+            border: 2px solid #34495e;
+            border-radius: 8px;
+            font-size: 0.8em;
+            font-family: inherit;
+            resize: vertical;
+            margin-bottom: 8px;
+        }
+
+        .answer-edit-buttons {
+            display: flex;
+            gap: 6px;
+            justify-content: flex-end;
+        }
+
+        .answer-edit-btn {
+            padding: 6px 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.75em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .answer-edit-btn.save {
+            background: #27ae60;
+            color: white;
+        }
+
+        .answer-edit-btn.cancel {
+            background: #95a5a6;
+            color: white;
+        }
+
+        /* 메인 컨트롤 */
+        .main-controls {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 200;
+        }
+
+        .control-btn {
+            background: rgba(52, 152, 219, 0.9);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-btn:hover, .control-btn:active {
+            background: rgba(41, 128, 185, 1);
+            transform: translateX(-50%) translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 답변 다운로드 컨트롤 */
+        .download-controls {
+            position: fixed;
+            top: 130px;
+            right: 15px;
+            z-index: 200;
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.75em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 3px 10px rgba(39, 174, 96, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .download-btn:hover, .download-btn:active {
+            background: linear-gradient(45deg, #219a52, #27ae60);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
+        }
+
+        .download-btn.has-answers {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 3px 10px rgba(39, 174, 96, 0.3); }
+            50% { box-shadow: 0 3px 15px rgba(39, 174, 96, 0.6); }
+            100% { box-shadow: 0 3px 10px rgba(39, 174, 96, 0.3); }
+        }
+        .bottom-controls {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 6px;
+            z-index: 200;
+        }
+
+        .action-btn {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            padding: 10px 4px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 0.7em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .action-btn:hover, .action-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .action-btn.secondary {
+            background: linear-gradient(45deg, #95a5a6, #7f8c8d);
+        }
+
+        .action-btn.answer {
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+        }
+
+        .action-btn.active {
+            background: linear-gradient(45deg, #27ae60, #2ecc71) !important;
+        }
+
+        .action-btn.restart {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            position: relative;
+            z-index: 1000;
+        }
+        
+        .action-btn.restart:hover, .action-btn.restart:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+            background: linear-gradient(45deg, #c0392b, #a93226);
+        }
+
+        /* 질문 목록 스타일 */
+        .questions-list {
+            max-height: 60vh;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .question-item {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .question-item:active {
+            background: rgba(52, 152, 219, 0.1);
+            border-color: #3498db;
+            transform: scale(0.98);
+        }
+
+        .question-item.current {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            border-color: #c0392b;
+        }
+
+        .question-item.completed {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            color: white;
+            border-color: #27ae60;
+        }
+
+        .question-number {
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 5px;
+            font-size: 0.85em;
+        }
+
+        .question-item.current .question-number,
+        .question-item.completed .question-number {
+            color: white;
+        }
+
+        .question-content {
+            font-size: 0.85em;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+
+        /* 채용공고 및 팁 스타일 */
+        .info-section {
+            background: rgba(52, 73, 94, 0.1);
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            border-left: 4px solid #3498db;
+        }
+
+        .info-section h4 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        .info-section p, .info-section li {
+            font-size: 0.8em;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+
+        .tips-section {
+            background: linear-gradient(45deg, #1abc9c, #16a085);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+
+        .tips-section h4 {
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+
+        .tips-section ul {
+            padding-left: 15px;
+        }
+
+        .tips-section li {
+            font-size: 0.8em;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+
+        .evaluation-area {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .evaluation-area h4 {
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+
+        .evaluation-criteria {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .criteria-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.75em;
+            line-height: 1.3;
+        }
+
+        /* 스크롤바 숨기기 (모바일) */
+        .info-panel::-webkit-scrollbar,
+        .questions-list::-webkit-scrollbar,
+        .speech-bubble::-webkit-scrollbar,
+        .answer-bubble::-webkit-scrollbar {
+            display: none;
+        }
+
+        .info-panel,
+        .questions-list,
+        .speech-bubble,
+        .answer-bubble {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        @keyframes bubbleAppear {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* 모바일 슬라이드 업 컨트롤 */
+        .mobile-slide-indicator {
+            position: fixed;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 250;
+            background: rgba(52, 152, 219, 0.9);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            backdrop-filter: blur(10px);
+            animation: bounce 2s infinite;
+            display: none;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* 하단 컨트롤들 슬라이드 기능 */
+        .main-controls,
+        .bottom-controls {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .main-controls.slide-up,
+        .bottom-controls.slide-up {
+            transform: translateY(-20px);
+        }
+
+        /* 면접 시작 버튼 강화 */
+        .control-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .control-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+
+        .control-btn:hover::before,
+        .control-btn:active::before {
+            left: 100%;
+        }
+
+        /* 모바일에서 버튼 가시성 향상 */
+        @media (max-width: 768px) {
+            .main-controls {
+                bottom: 20px;
+                z-index: 250;
+            }
+            
+            .bottom-controls {
+                bottom: 20px;
+                z-index: 250;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                padding: 10px;
+                margin: 0 10px;
+            }
+            
+            .control-btn {
+                box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+                border: 2px solid rgba(255, 255, 255, 0.2);
+            }
+            
+            .action-btn {
+                box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+            
+            /* 스와이프 영역 */
+            .swipe-area {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 30px;
+                z-index: 200;
+                background: transparent;
+            }
+        }
+
+        /* 화면 크기별 버튼 조정 */
+        @media (max-height: 600px) {
+            .main-controls {
+                bottom: 15px;
+            }
+            
+            .bottom-controls {
+                bottom: 15px;
+            }
+            
+            .mobile-slide-indicator {
+                bottom: 3px;
+                font-size: 0.7em;
+                padding: 6px 15px;
+            }
+        }
+
+        @media (max-height: 500px) {
+            .main-controls {
+                bottom: 10px;
+            }
+            
+            .bottom-controls {
+                bottom: 10px;
+            }
+            
+            .control-btn {
+                font-size: 1em !important;
+                padding: 12px 25px !important;
+                min-height: 45px !important;
+            }
+            
+            .action-btn {
+                font-size: 0.75em !important;
+                padding: 10px 6px !important;
+                min-height: 40px !important;
+            }
+        }
+        @media (max-width: 768px) {
+            .header {
+                padding: 12px 15px;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(20px);
+            }
+            
+            .header h1 {
+                font-size: 1.3em;
+                font-weight: bold;
+                color: #2c3e50;
+            }
+            
+            .interview-info {
+                font-size: 0.85em;
+                line-height: 1.4;
+                margin-top: 5px;
+            }
+            
+            .header-timer {
+                font-size: 1.1em;
+                padding: 8px 15px;
+                min-width: 70px;
+            }
+            
+            .small-menu-btn {
+                font-size: 0.8em !important;
+                padding: 8px 12px !important;
+                min-height: 44px !important;
+                border-radius: 12px;
+            }
+            
+            /* 질문 말풍선 강화 */
+            .speech-bubble {
+                font-size: 1em !important;
+                padding: 18px 20px !important;
+                line-height: 1.6 !important;
+                bottom: 80px !important;
+                border-radius: 20px;
+                box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+            }
+            
+            .interviewer-name {
+                font-size: 1em !important;
+                font-weight: bold;
+            }
+            
+            .bubbleQuestion {
+                font-size: 1.1em !important;
+                line-height: 1.6 !important;
+                margin: 10px 0;
+            }
+            
+            #bubbleCategory {
+                font-size: 0.9em !important;
+                margin-top: 12px !important;
+            }
+            
+            /* 하단 버튼들 강화 */
+            .action-btn {
+                font-size: 0.85em !important;
+                padding: 14px 8px !important;
+                min-height: 50px !important;
+                border-radius: 15px;
+                font-weight: bold;
+            }
+            
+            .control-btn {
+                font-size: 1.2em !important;
+                padding: 16px 30px !important;
+                min-height: 55px !important;
+                border-radius: 25px;
+            }
+            
+            /* 답변 패널들 강화 */
+            .example-answer-bubble,
+            .my-answer-bubble {
+                font-size: 0.9em !important;
+                padding: 18px !important;
+                line-height: 1.5 !important;
+                border-radius: 20px;
+            }
+            
+            .answer-edit-textarea {
+                font-size: 1em !important;
+                padding: 15px !important;
+                min-height: 120px !important;
+                line-height: 1.5 !important;
+            }
+            
+            .answer-edit-btn {
+                font-size: 0.9em !important;
+                padding: 12px 20px !important;
+                min-height: 44px !important;
+            }
+            
+            /* X 버튼들 크기 확대 */
+            .close-example,
+            .close-answer,
+            .close-panel {
+                width: 36px !important;
+                height: 36px !important;
+                font-size: 18px !important;
+            }
+            
+            /* 모달 버튼들 */
+            .modal-btn {
+                font-size: 0.95em !important;
+                padding: 14px 18px !important;
+                min-height: 48px !important;
+            }
+            
+            /* 상태 표시 */
+            .interview-status {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+        }
+        
+        /* 아주 작은 화면 (iPhone SE 등) */
+        @media (max-width: 400px) {
+            .header h1 {
+                font-size: 1.1em;
+            }
+            
+            .speech-bubble {
+                font-size: 0.95em !important;
+                padding: 16px 18px !important;
+            }
+            
+            .action-btn {
+                font-size: 0.75em !important;
+                padding: 12px 6px !important;
+            }
+        }
+
+        /* 세로 화면 추가 최적화 */
+        @media screen and (orientation: portrait) and (max-height: 600px) {
+            .main-container {
+                padding-top: 75px;
+            }
+            
+            #canvas-container {
+                height: calc(100vh - 75px);
+            }
+            
+            .status-displays {
+                top: 80px;
+            }
+            
+            .info-panel {
+                top: 80px;
+                bottom: 60px;
+            }
+            
+            .speech-bubble {
+                bottom: 60px;
+                max-height: 20vh;
+            }
+        }
+
+        /* 모바일 전용 터치 최적화 */
+        @media (max-width: 768px) {
+            .header {
+                padding: 10px 15px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+            }
+            
+            .main-container {
+                padding-top: 100px;
+                padding-bottom: 10px;
+            }
+            
+            #canvas-container {
+                height: calc(100vh - 100px);
+                min-height: 300px;
+            }
+            
+            .speech-bubble {
+                font-size: 0.85em;
+                padding: 15px;
+                bottom: 80px;
+                max-height: 30vh;
+                line-height: 1.5;
+            }
+            
+            .example-answer-bubble,
+            .my-answer-bubble {
+                font-size: 0.8em;
+                padding: 15px;
+                top: 100px;
+                bottom: 200px;
+            }
+            
+            .bottom-controls {
+                bottom: 15px;
+                padding: 0 10px;
+                gap: 8px;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+            
+            /* 터치 타겟 크기 최적화 */
+            .modal-btn {
+                min-height: 44px;
+                padding: 12px 16px;
+                font-size: 0.9em;
+            }
+            
+            .answer-edit-btn {
+                min-height: 44px;
+                padding: 12px 16px;
+                font-size: 0.85em;
+            }
+            
+            .control-btn {
+                min-height: 50px;
+                padding: 15px 25px;
+                font-size: 1.1em;
+            }
+        }
+            
+            .my-answer-bubble {
+                top: 65px;
+                bottom: 55px;
+                left: 50%;
+                right: 5px;
+                margin-left: 2.5px;
+            }
+            
+            .speech-bubble {
+                bottom: 55px;
+                max-height: 30vh;
+                left: 5px;
+                right: 5px;
+            }
+        }
+
+        /* 세로 화면에서도 답변 패널들 최적화 */
+        @media screen and (orientation: portrait) and (max-height: 600px) {
+            .example-answer-bubble {
+                top: 80px;
+                bottom: 60px;
+            }
+            
+            .my-answer-bubble {
+                top: 80px;
+                bottom: 60px;
+            }
+        }
+
+        /* 작은 화면에서 답변 패널 폰트 크기 조정 */
+        @media screen and (max-width: 400px) {
+            .example-answer-bubble,
+            .my-answer-bubble {
+                font-size: 0.75em;
+                padding: 10px 12px;
+            }
+        }
+
+        /* 스크롤바 숨기기 (새로운 답변 패널들) */
+        .example-answer-bubble::-webkit-scrollbar,
+        .my-answer-bubble::-webkit-scrollbar {
+            display: none;
+        }
+
+        .example-answer-bubble,
+        .my-answer-bubble {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* 터치 피드백 개선 */
+        .small-menu-btn:active,
+        .control-btn:active,
+        .action-btn:active,
+        .close-panel:active,
+        .close-answer:active,
+        .edit-answer-btn:active {
+            transform: scale(0.95);
+            opacity: 0.8;
+        }
+
+        /* 텍스트 선택 방지 */
+        button, .speech-bubble, .answer-bubble, .info-panel {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* 텍스트 에리어는 선택 가능 */
+        .answer-edit-textarea {
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-top">
+                <h1>🎯 전북대학교 사서직 면접</h1>
+                <div class="header-timer" id="timerDisplay">00:00</div>
+            </div>
+            <div class="interview-info">
+                📅 2025. 7. 18.(금) 14:00~ | 📍 대학본부(1-1건물) 2층 | 💼 신분증 필수
+            </div>
+            <div class="header-controls">
+                <div class="small-menu">
+                    <button class="small-menu-btn" onclick="showUserIdModal()">🔗 내ID</button>
+                    <button class="small-menu-btn" onclick="togglePanel('questions')">📝 질문목록</button>
+                    <button class="small-menu-btn" onclick="togglePanel('jobinfo')">📋 채용공고</button>
+                    <button class="small-menu-btn" onclick="togglePanel('tips')">💡 면접팁</button>
+                    <button class="small-menu-btn" onclick="togglePanel('evaluation')">📊 평정요소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div id="canvas-container"></div>
+        
+        <!-- 상태 표시 -->
+        <div class="status-displays">
+            <div class="interview-status" id="interviewStatus">면접 대기중</div>
+        </div>
+
+        <!-- 사용자 ID 모달 -->
+        <div class="user-id-modal" id="userIdModal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>🔗 내 답변 저장 ID</h3>
+                    <button class="close-modal" onclick="hideUserIdModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="current-id-section" id="currentIdSection">
+                        <div class="id-display">
+                            <strong>현재 ID:</strong> <span id="currentIdDisplay">없음</span>
+                        </div>
+                        <div class="id-display" style="font-size: 0.9em; margin-top: 5px;">
+                            <strong>저장된 답변:</strong> <span id="answerCountDisplay">0개</span>
+                        </div>
+                        <div class="id-actions">
+                            <button class="modal-btn share" onclick="shareCurrentId()">📤 ID 공유</button>
+                            <button class="modal-btn danger" onclick="resetUserId()">🗑️ ID 삭제</button>
+                            <button class="modal-btn secondary" onclick="debugCurrentData()">🔍 데이터 확인</button>
+                        </div>
+                    </div>
+                    
+                    <div class="new-id-section">
+                        <h4>새 ID 만들기</h4>
+                        <input type="text" id="newIdInput" placeholder="원하는 ID 입력 (예: hong123)" maxlength="20">
+                        <button class="modal-btn primary" onclick="createNewId()">✨ ID 생성</button>
+                        <button class="modal-btn secondary" onclick="generateRandomId()">🎲 랜덤 생성</button>
+                    </div>
+                    
+                    <div class="load-id-section">
+                        <h4>기존 ID로 접속</h4>
+                        <input type="text" id="loadIdInput" placeholder="공유받은 ID 입력" maxlength="20">
+                        <button class="modal-btn primary" onclick="loadExistingId()">🔄 불러오기</button>
+                    </div>
+                    
+                    <div class="id-help">
+                        <p><strong>💡 사용법:</strong></p>
+                        <p>• ID를 만들면 답변이 자동 저장됩니다</p>
+                        <p>• <strong>localStorage 저장</strong>: 브라우저에 영구 저장됩니다</p>
+                        <p>• <strong>모바일 완벽 지원</strong>: 핸드폰에서도 영구 보관</p>
+                        <p>• <strong>브라우저 종료 후에도 유지</strong>: 완전히 껏다 켜도 보관</p>
+                        <p>• <strong>Claude 환경 제한</strong>: 여기서는 제한되지만 실제 브라우저에서 완벽 동작</p>
+                        <p><strong>🔍 디버깅:</strong> 개발자 도구 콘솔에서 저장소 상태를 확인할 수 있습니다</p>입 없이 사용 가능</p>
+                        <p><strong>🔍 디버깅:</strong> 개발자 도구 콘솔에서 저장 상태를 확인할 수 있습니다</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 질문 목록 패널 -->
+        <div class="info-panel" id="questionsPanel">
+            <div class="panel-header">
+                <h3>📝 전체 예상 질문 목록</h3>
+                <button class="close-panel" onclick="closePanel('questions')">×</button>
+            </div>
+            <div class="questions-list" id="questionsList">
+                <!-- 질문들이 여기에 동적으로 생성됩니다 -->
+            </div>
+        </div>
+
+        <!-- 채용공고 패널 -->
+        <div class="info-panel" id="jobinfoPanel">
+            <div class="panel-header">
+                <h3>📋 사서 9급 채용공고</h3>
+                <button class="close-panel" onclick="closePanel('jobinfo')">×</button>
+            </div>
+            <div class="info-section">
+                <h4>📌 모집인원</h4>
+                <p>• 사서 9급 1명</p>
+            </div>
+            <div class="info-section">
+                <h4>💼 담당업무</h4>
+                <p>• 대학도서관 자료 관리 및 연구·학습지원 서비스</p>
+                <p>• 도서관 통합운영시스템 관리</p>
+                <p>• 사서 행정일반 등 제반 업무</p>
+            </div>
+            <div class="info-section">
+                <h4>🎯 면접 평정요소 (상·중·하)</h4>
+                <p>• <strong>소통·공감:</strong> 국민 등과 소통하고 공감하는 능력</p>
+                <p>• <strong>헌신·열정:</strong> 국가에 대한 헌신과 직무에 대한 열정적인 태도</p>
+                <p>• <strong>창의·혁신:</strong> 창의성과 혁신을 이끄는 능력</p>
+                <p>• <strong>윤리·책임:</strong> 공무원으로서의 윤리의식과 책임성</p>
+            </div>
+        </div>
+
+        <!-- 면접 팁 패널 -->
+        <div class="info-panel" id="tipsPanel">
+            <div class="panel-header">
+                <h3>💡 면접 준비 팁</h3>
+                <button class="close-panel" onclick="closePanel('tips')">×</button>
+            </div>
+            <div class="tips-section">
+                <h4>🎯 기본 자세</h4>
+                <ul>
+                    <li>자신감 있는 자세와 밝은 표정 유지</li>
+                    <li>면접관과 적절한 아이컨택</li>
+                    <li>명확하고 또렷한 발음으로 답변</li>
+                    <li>차분하고 정중한 태도 유지</li>
+                </ul>
+            </div>
+            <div class="tips-section">
+                <h4>📚 답변 구성법</h4>
+                <ul>
+                    <li>STAR 기법 활용 (상황-과제-행동-결과)</li>
+                    <li>구체적인 사례와 경험 제시</li>
+                    <li>4년간의 도서관 경험 적극 활용</li>
+                    <li>전북대학교에 대한 이해도 표현</li>
+                </ul>
+            </div>
+            <div class="info-section">
+                <h4>⚠️ 주의사항</h4>
+                <p>• 면접 시간: 약 15-20분 예상</p>
+                <p>• 신분증 반드시 지참</p>
+                <p>• 정장 착용 권장</p>
+                <p>• 면접실 입실 전 휴대폰 진동 또는 전원 종료</p>
+            </div>
+        </div>
+
+        <!-- 평정요소 패널 -->
+        <div class="info-panel" id="evaluationPanel">
+            <div class="panel-header">
+                <h3>📊 면접 평정요소</h3>
+                <button class="close-panel" onclick="closePanel('evaluation')">×</button>
+            </div>
+            <div class="evaluation-area">
+                <h4>📋 평정요소 체크리스트</h4>
+                <div class="evaluation-criteria">
+                    <div class="criteria-item">
+                        <strong>소통·공감</strong><br>
+                        이용자와 소통하고 공감하는 능력
+                    </div>
+                    <div class="criteria-item">
+                        <strong>헌신·열정</strong><br>
+                        전북대학교에 대한 헌신과 업무 열정
+                    </div>
+                    <div class="criteria-item">
+                        <strong>창의·혁신</strong><br>
+                        도서관 서비스 개선 아이디어
+                    </div>
+                    <div class="criteria-item">
+                        <strong>윤리·책임</strong><br>
+                        공무원으로서의 윤리의식
+                    </div>
+                </div>
+            </div>
+            <div class="info-section">
+                <h4>💯 평가 기준</h4>
+                <p>• <strong>상(우수):</strong> 해당 역량이 매우 뛰어남</p>
+                <p>• <strong>중(보통):</strong> 해당 역량이 평균 수준</p>
+                <p>• <strong>하(미흡):</strong> 해당 역량이 부족함</p>
+            </div>
+        </div>
+
+        <!-- 메인 컨트롤 -->
+        <div class="main-controls">
+            <button class="control-btn" onclick="startInterview()" id="startBtn">
+                🎯 면접 시작
+            </button>
+        </div>
+
+        <!-- 하단 통합 컨트롤 -->
+        <div class="bottom-controls" id="bottomControls" style="display: none;">
+            <button class="action-btn restart" id="restartBtn" 
+                    onmousedown="window.location.reload()" 
+                    ontouchstart="window.location.reload()">🔄 재시작</button>
+            <button class="action-btn" onclick="previousQuestion()" id="prevBtn">⬅️ 이전질문</button>
+            <button class="action-btn" onclick="nextQuestion()" id="nextBtn">➡️ 다음질문</button>
+            <button class="action-btn secondary" onclick="togglePause()" id="pauseBtn">⏸️ 일시정지</button>
+            <button class="action-btn answer" onclick="showAnswerPanels()" id="answerBtn">💡 답변보기</button>
+        </div>
+
+        <!-- 답변 다운로드 버튼 (면접 시작 후에만 표시) -->
+        <div class="download-controls" id="downloadControls" style="display: none;">
+            <button class="download-btn" onclick="downloadMyAnswers()" id="downloadBtn">📝 내 답변 다운로드</button>
+        </div>
+
+        <!-- 좌측: 모범답변 말풍선 -->
+        <div class="example-answer-bubble" id="exampleAnswerBubble">
+            <div class="bubble-header">
+                <div class="expert-avatar">👨‍🎓</div>
+                <div class="expert-name">💡 모범답변</div>
+                <button class="close-example" onclick="
+                    var el = document.getElementById('exampleAnswerBubble');
+                    el.style.setProperty('display', 'none', 'important');
+                    el.style.setProperty('visibility', 'hidden', 'important');
+                    el.style.setProperty('opacity', '0', 'important');
+                    el.classList.remove('show');
+                    el.classList.add('force-hidden');
+                ">×</button>
+            </div>
+            <div id="exampleAnswerContent">모범답변이 여기에 표시됩니다</div>
+        </div>
+
+        <!-- 질문 말풍선 -->
+        <div class="speech-bubble" id="speechBubble">
+            <div class="bubble-header">
+                <div class="interviewer-avatar" id="interviewerAvatar">👨‍💼</div>
+                <div class="interviewer-name" id="bubbleInterviewer">면접관 1</div>
+                <button class="show-example-btn" onclick="showAnswerPanels()" id="showExampleBtn">💡 답변보기</button>
+            </div>
+            <div id="bubbleQuestion">면접을 시작하려면 하단의 '면접 시작' 버튼을 클릭하세요.</div>
+            <div style="font-size: 0.8em; color: #7f8c8d; margin-top: 8px; font-weight: bold;" id="bubbleCategory">준비중</div>
+        </div>
+
+        <!-- 우측: 내 답변 말풍선 -->
+        <div class="my-answer-bubble" id="myAnswerBubble">
+            <div class="answer-bubble-header">
+                <div class="interviewee-avatar">👩‍💼</div>
+                <div class="answer-title" id="myAnswerTitle">✏️ 내 답변</div>
+                <button class="close-answer" onclick="
+                    var el = document.getElementById('myAnswerBubble');
+                    el.style.setProperty('display', 'none', 'important');
+                    el.style.setProperty('visibility', 'hidden', 'important');
+                    el.style.setProperty('opacity', '0', 'important');
+                    el.classList.remove('show');
+                    el.classList.add('force-hidden');
+                ">×</button>
+            </div>
+            <div id="myAnswerContent">내 답변을 작성해보세요</div>
+            <div class="answer-edit-mode" id="myEditMode" style="display: none;">
+                <div style="font-size: 0.85em; color: #7f8c8d; margin-bottom: 10px;">내 답변을 작성해보세요:</div>
+                <textarea class="answer-edit-textarea" id="myAnswerTextarea" placeholder="여기에 답변을 작성하세요..."></textarea>
+                <div class="answer-edit-buttons">
+                    <button class="answer-edit-btn save" onclick="saveMyAnswerForce()">저장</button>
+                    <button class="answer-edit-btn cancel" onclick="cancelMyEdit()">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 전역 변수
+        let scene, camera, renderer;
+        let currentQuestionIndex = 0;
+        let interviewStarted = false;
+        let isPaused = false;
+        let interviewTimer;
+        let startTime;
+        let totalElapsedTime = 0; // 총 경과 시간 추적
+        let cameraTarget = new THREE.Vector3(0, 3, 0);
+        let cameraPosition = new THREE.Vector3(0, 6, 12);
+        let isMouseDown = false;
+        let activePanel = null;
+        let currentAnswerMode = 'example';
+        let myAnswers = {};
+        let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        let currentUserId = null;
+        let isDataLoaded = false;
+
+        // 답변 저장 함수 (모바일 최적화)
+        function saveMyAnswerForce() {
+            if (!currentUserId) {
+                alert('⚠️ ID가 없습니다. 먼저 ID를 만들어주세요!');
+                return;
+            }
+            
+            const textarea = document.getElementById('myAnswerTextarea');
+            if (!textarea) {
+                alert('❌ 입력 필드를 찾을 수 없습니다.');
+                return;
+            }
+            
+            const answerText = textarea.value.trim();
+            if (!answerText || answerText.length === 0) {
+                alert('답변을 입력해주세요!');
+                return;
+            }
+            
+            try {
+                if (!window.myAnswers) {
+                    window.myAnswers = {};
+                }
+                window.myAnswers[currentQuestionIndex] = answerText;
+                myAnswers = window.myAnswers;
+                
+                if (!window.savedAnswersData) {
+                    window.savedAnswersData = {};
+                }
+                if (!window.savedAnswersData[currentUserId]) {
+                    window.savedAnswersData[currentUserId] = {};
+                }
+                window.savedAnswersData[currentUserId][currentQuestionIndex] = answerText;
+                savedAnswersData = window.savedAnswersData;
+                
+                const dataToSave = JSON.stringify(window.savedAnswersData);
+                localStorage.setItem('jnu_interview_answers', dataToSave);
+                
+                const verification = localStorage.getItem('jnu_interview_answers');
+                if (verification && verification.includes(answerText)) {
+                    const myAnswerContentEl = document.getElementById('myAnswerContent');
+                    const myAnswerTitleEl = document.getElementById('myAnswerTitle');
+                    const myEditModeEl = document.getElementById('myEditMode');
+                    
+                    if (myAnswerContentEl) {
+                        myAnswerContentEl.textContent = answerText;
+                    }
+                    if (myAnswerTitleEl) {
+                        const totalAnswers = Object.keys(myAnswers).length;
+                        myAnswerTitleEl.textContent = `✏️ 내 답변 (ID: ${currentUserId}, 총 ${totalAnswers}개)`;
+                    }
+                    
+                    alert(`🎉 저장 완료!\n\nQ${currentQuestionIndex + 1}번 답변이 저장되었습니다.`);
+                    
+                    if (myEditModeEl) {
+                        myEditModeEl.style.display = 'none';
+                    }
+                    if (myAnswerContentEl) {
+                        myAnswerContentEl.style.display = 'block';
+                    }
+                } else {
+                    alert('❌ 저장에 실패했습니다.');
+                }
+                
+            } catch (error) {
+                alert('저장 중 오류가 발생했습니다. 다시 시도해주세요.');
+            }
+        }
+
+        // window 객체에도 함수 등록 (전역 접근 보장)
+        window.saveMyAnswerForce = saveMyAnswerForce;
+        window.closeExampleAnswerPanel = closeExampleAnswerPanel;
+        window.closeMyAnswerPanel = closeMyAnswerPanel;
+        window.updateAnswerButtonState = updateAnswerButtonState;
+
+        // 면접 질문 데이터
+        const interviewQuestions = [
+            {
+                text: "간단한 자기소개를 부탁드립니다.",
+                category: "인성·공직관",
+                interviewer: 1,
+                interviewerName: "면접관 1",
+                exampleAnswer: "안녕하십니까. 전북대학교 사서직에 지원한 ○○○입니다. 목포시립도서관에서 4년간 근무하며 도서관 운영 전반에 대한 실무 경험을 쌓았습니다. 특히 이용자 서비스와 자료 관리 업무에서 체계적인 업무 처리 능력을 기를 수 있었습니다. 전북대학교의 글로컬대학30 사업과 함께 성장하며, 대학도서관의 연구지원 서비스 발전에 기여하고 싶습니다."
+            },
+            {
+                text: "전북대학교로 전입하려는 이유는 무엇입니까?",
+                category: "헌신·열정",
+                interviewer: 1,
+                interviewerName: "면접관 1",
+                exampleAnswer: "첫째, 전북대학교가 추진하는 글로컬대학30 사업에 참여하여 대학의 발전에 기여하고 싶습니다. 둘째, 대학도서관은 연구지원 서비스가 핵심인데, 목포시립도서관에서의 경험을 바탕으로 더 전문적인 학술정보 서비스를 제공하고 싶습니다. 셋째, 안정적인 교육환경에서 장기적으로 전문성을 발전시키며 기여할 수 있다고 생각합니다."
+            },
+            {
+                text: "도서관 이용자와 갈등이 발생했을 때 어떻게 해결하시겠습니까?",
+                category: "소통·공감",
+                interviewer: 2,
+                interviewerName: "면접관 2",
+                exampleAnswer: "먼저 이용자의 입장에서 상황을 경청하고 공감을 표현합니다. 감정적 대응보다는 냉정하게 문제의 원인을 파악하고, 도서관 규정과 이용자의 요구사항을 조율할 수 있는 합리적 해결방안을 제시합니다. 필요시 상급자와 상담하여 최선의 해결책을 찾고, 향후 유사한 상황을 예방할 수 있는 개선방안도 함께 검토하겠습니다."
+            },
+            {
+                text: "전북대학교 중앙도서관의 특색에 대해 아는 것이 있나요?",
+                category: "창의·혁신",
+                interviewer: 3,
+                interviewerName: "면접관 3",
+                exampleAnswer: "전북대 중앙도서관은 지역 거점국립대학으로서 풍부한 학술자료를 보유하고 있으며, 특히 한국학 관련 특성화 자료가 우수하다고 알고 있습니다. 또한 글로컬대학30 사업과 연계하여 국제화된 학습환경 조성에 힘쓰고 있으며, 디지털 도서관 서비스와 연구지원 프로그램이 체계적으로 운영되고 있다고 알고 있습니다. 이러한 환경에서 제가 가진 경험을 활용하고 싶습니다."
+            },
+            {
+                text: "기간제직원 관리 경험에서 어려웠던 점은 무엇입니까?",
+                category: "소통·공감",
+                interviewer: 2,
+                interviewerName: "면접관 2",
+                exampleAnswer: "기간제직원들의 업무 연속성 확보가 가장 어려웠습니다. 계약기간이 한정되어 있어 장기적 업무 계획 수립에 제약이 있었고, 새로운 직원이 오면 업무 인수인계와 교육에 시간이 많이 소요되었습니다. 이를 해결하기 위해 표준화된 업무 매뉴얼을 작성하고, 정기적인 소통과 피드백을 통해 업무 효율성을 높이려 노력했습니다."
+            },
+            {
+                text: "최근 도서관 트렌드에 대해 어떻게 생각하십니까?",
+                category: "창의·혁신",
+                interviewer: 3,
+                interviewerName: "면접관 3",
+                exampleAnswer: "최근 도서관은 단순한 자료 보관소에서 복합문화공간으로 변화하고 있습니다. 디지털 자료의 확산으로 전자책, 데이터베이스 서비스가 중요해졌고, 메이커스페이스, 스터디룸 등 다양한 학습공간이 제공되고 있습니다. 특히 대학도서관은 연구지원 서비스가 핵심이 되어, 논문작성 지원, 연구데이터 관리 등 전문적 서비스가 강화되고 있다고 생각합니다."
+            },
+            {
+                text: "공무원으로서 가져야 할 윤리의식은 무엇입니까?",
+                category: "윤리·책임",
+                interviewer: 1,
+                interviewerName: "면접관 1",
+                exampleAnswer: "공무원은 국민 전체의 봉사자로서 공정성과 투명성을 최우선으로 해야 합니다. 개인적 이익보다 공익을 우선시하고, 업무 처리 시 편견 없이 모든 이용자를 평등하게 대해야 합니다. 또한 지속적인 자기계발을 통해 전문성을 향상시키고, 정직하고 성실한 자세로 맡은 바 책임을 다해야 한다고 생각합니다."
+            },
+            {
+                text: "업무상 실수가 발생했을 때 어떻게 대처하시겠습니까?",
+                category: "윤리·책임",
+                interviewer: 1,
+                interviewerName: "면접관 1",
+                exampleAnswer: "실수를 인정하고 즉시 상급자에게 보고합니다. 실수의 원인을 분석하여 피해를 최소화할 수 있는 대안을 마련하고, 관련자들에게 상황을 투명하게 설명드립니다. 실수를 통해 배운 점을 정리하여 향후 재발 방지를 위한 개선방안을 수립하고, 업무 프로세스를 점검하여 시스템적 보완책도 함께 마련하겠습니다."
+            },
+            {
+                text: "글로컬대학30 사업에서 도서관이 할 수 있는 역할은?",
+                category: "창의·혁신",
+                interviewer: 3,
+                interviewerName: "면접관 3",
+                exampleAnswer: "글로벌 연구 역량 강화를 위해 해외 학술데이터베이스 확충과 국제적 연구지원 서비스를 제공할 수 있습니다. 로컬 특성화를 위해서는 지역학 자료 수집·보존과 지역사회 연계 프로그램을 운영할 수 있고, 외국인 학생들을 위한 다국어 서비스와 문화 적응 프로그램도 도서관에서 지원 가능하다고 생각합니다."
+            },
+            {
+                text: "감명깊게 읽은 책이 있다면 소개해주세요.",
+                category: "소통·공감",
+                interviewer: 2,
+                interviewerName: "면접관 2",
+                exampleAnswer: "랑가나단의 '도서관학 5법칙'을 감명깊게 읽었습니다. '책은 이용되기 위해 존재한다', '모든 독자에게는 그의 책이 있다' 등의 원칙이 도서관 서비스의 본질을 잘 보여준다고 생각합니다. 이 책을 통해 이용자 중심의 서비스 마인드가 얼마나 중요한지 깨달았고, 실제 업무에서도 이러한 철학을 바탕으로 서비스하려 노력하고 있습니다."
+            },
+            {
+                text: "목포시와 전북대 도서관의 차이점을 어떻게 보십니까?",
+                category: "헌신·열정",
+                interviewer: 2,
+                interviewerName: "면접관 2",
+                exampleAnswer: "목포시립도서관은 지역주민 대상의 생활밀착형 서비스에 중점을 두었다면, 전북대 도서관은 학술연구 지원이 핵심입니다. 이용자층도 일반 시민에서 교수, 연구자, 대학생으로 달라지므로 더 전문적이고 심화된 정보서비스가 필요합니다. 목포에서의 기본적인 도서관 운영 경험을 바탕으로, 대학도서관의 특성에 맞는 연구지원 서비스를 익히고 발전시키고 싶습니다."
+            },
+            {
+                text: "어려운 업무 상황을 극복한 경험이 있다면?",
+                category: "헌신·열정",
+                interviewer: 1,
+                interviewerName: "면접관 1",
+                exampleAnswer: "코로나19 상황에서 도서관 서비스를 중단 없이 제공해야 했던 경험이 있습니다. 대면 서비스 제한으로 이용자들의 불편이 컸지만, 온라인 예약 시스템을 도입하고 비대면 도서 대출 서비스를 새롭게 구축했습니다. 동료들과 협력하여 방역 수칙을 준수하면서도 도서관 본연의 기능을 유지할 수 있었고, 이 과정에서 위기 상황 대응 능력을 기를 수 있었습니다."
+            },
+            {
+                text: "전북대 도서관 서비스 개선 아이디어가 있다면?",
+                category: "창의·혁신",
+                interviewer: 3,
+                interviewerName: "면접관 3",
+                exampleAnswer: "연구지원 서비스 강화를 위해 '연구 단계별 맞춤 서비스'를 제안합니다. 연구 기획 단계에서는 선행연구 조사 지원, 연구 진행 중에는 참고문헌 관리 도구 교육, 연구 완료 후에는 논문 투고 및 출판 지원 서비스를 체계적으로 제공하는 것입니다. 또한 학과별 특성을 고려한 전담 사서 배치를 통해 더욱 전문적인 서비스를 제공할 수 있다고 생각합니다."
+            },
+            {
+                text: "동료들과의 협업에서 중요하게 생각하는 것은?",
+                category: "소통·공감",
+                interviewer: 2,
+                interviewerName: "면접관 2",
+                exampleAnswer: "상호 존중과 열린 소통이 가장 중요하다고 생각합니다. 각자의 업무 영역을 인정하면서도 필요할 때는 적극적으로 도움을 주고받는 것이 좋은 협업이라고 봅니다. 정기적인 업무 공유와 피드백을 통해 서로의 업무를 이해하고, 공동의 목표를 향해 함께 노력하는 자세가 중요합니다. 갈등이 있을 때는 개인 감정보다 업무의 효율성과 서비스 질 향상을 우선으로 해결해야 한다고 생각합니다."
+            },
+            {
+                text: "마지막으로 하고 싶은 말씀이 있다면?",
+                category: "종합",
+                interviewer: 1,
+                interviewerName: "면접관 1",
+                exampleAnswer: "4년간의 목포시립도서관 경험을 바탕으로 전북대학교 발전에 기여하고 싶습니다. 글로컬대학30 사업과 함께 성장하며, 이용자 중심의 서비스 마인드로 대학구성원들의 연구와 학습을 적극 지원하겠습니다. 끊임없는 자기계발을 통해 전문성을 향상시키고, 전북대학교 사서로서 자긍심을 가지고 최선을 다하겠습니다. 감사합니다."
+            }
+        ];
+
+        // PWA 서비스 워커 등록 및 설치 안내
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                // 간단한 서비스 워커 인라인 등록
+                const swCode = `
+                    const CACHE_NAME = 'jnu-interview-v1';
+                    const urlsToCache = ['./', 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'];
+                    
+                    self.addEventListener('install', function(event) {
+                        event.waitUntil(
+                            caches.open(CACHE_NAME)
+                                .then(function(cache) {
+                                    return cache.addAll(urlsToCache);
+                                })
+                        );
+                    });
+                    
+                    self.addEventListener('fetch', function(event) {
+                        event.respondWith(
+                            caches.match(event.request)
+                                .then(function(response) {
+                                    if (response) {
+                                        return response;
+                                    }
+                                    return fetch(event.request);
+                                })
+                        );
+                    });
+                `;
+                
+                // 서비스 워커 블롭 생성 및 등록
+                const blob = new Blob([swCode], {type: 'application/javascript'});
+                const swUrl = URL.createObjectURL(blob);
+                
+                navigator.serviceWorker.register(swUrl)
+                    .then(function() {
+                        // PWA 설치 안내 표시
+                        showPWAInstallGuide();
+                    });
+            });
+        }
+
+        // PWA 설치 안내
+        function showPWAInstallGuide() {
+            // iOS Safari에서 홈 화면에 추가 안내
+            if (isMobileDevice() && /iPhone|iPad/.test(navigator.userAgent)) {
+                setTimeout(() => {
+                    if (!localStorage.getItem('pwa-guide-shown')) {
+                        const guideMessage = `📱 iPhone에서 앱처럼 사용하기\n\n1. 하단 공유 버튼 (□↑) 탭\n2. "홈 화면에 추가" 선택\n3. "추가" 버튼 탭\n\n홈 화면에 아이콘이 생성됩니다!`;
+                        
+                        if (confirm(guideMessage + '\n\n다시 보지 않으시겠습니까?')) {
+                            // 메모리에만 저장 (localStorage 대신)
+                            window.pwaGuideShown = true;
+                        }
+                    }
+                }, 2000);
+            }
+        }
+
+        // 모바일 최적화 함수들
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
+                   (window.innerWidth <= 768);
+        }
+
+        function optimizeForMobile() {
+            if (isMobileDevice()) {
+                // 모바일에서 3D 렌더링 품질 조정
+                if (renderer) {
+                    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+                    renderer.shadowMap.enabled = false; // 모바일에서 그림자 비활성화
+                }
+                
+                // 터치 이벤트 최적화
+                document.body.style.touchAction = 'pan-x pan-y';
+                
+                // 모바일 전용 스타일 적용
+                document.body.classList.add('mobile-optimized');
+            }
+        }
+
+        // 패널 토글 함수 (모바일 최적화)
+        function togglePanel(panelType) {
+            const panel = document.getElementById(panelType + 'Panel');
+            const toggleBtn = document.querySelector(`[onclick="togglePanel('${panelType}')"]`);
+            
+            // 다른 패널들 닫기
+            closeAllPanels();
+            
+            if (activePanel === panelType) {
+                // 같은 패널이면 닫기
+                activePanel = null;
+                if (toggleBtn) toggleBtn.classList.remove('active');
+            } else {
+                // 새 패널 열기
+                panel.classList.add('active');
+                if (toggleBtn) toggleBtn.classList.add('active');
+                activePanel = panelType;
+                
+                // 모바일에서 패널 열릴 때 스크롤 방지
+                if (isMobileDevice()) {
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+        }
+
+        // 패널 닫기 (모바일 최적화)
+        function closePanel(panelType) {
+            const panel = document.getElementById(panelType + 'Panel');
+            const toggleBtn = document.querySelector(`[onclick="togglePanel('${panelType}')"]`);
+            
+            panel.classList.remove('active');
+            if (toggleBtn) toggleBtn.classList.remove('active');
+            activePanel = null;
+            
+            // 모바일에서 패널 닫힐 때 스크롤 복원
+            if (isMobileDevice()) {
+                document.body.style.overflow = '';
+            }
+        }
+
+        // 모든 패널 닫기
+        // 모든 패널 닫기
+        function closeAllPanels() {
+            document.querySelectorAll('.info-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
+            document.querySelectorAll('.small-menu-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // 모바일에서 스크롤 복원
+            if (isMobileDevice()) {
+                document.body.style.overflow = '';
+            }
+        }
+
+        // 면접 시작
+        function startInterview() {
+            interviewStarted = true;
+            startTime = Date.now();
+            totalElapsedTime = 0;
+            currentQuestionIndex = 0;
+            
+            document.getElementById('interviewStatus').textContent = '면접 진행중';
+            
+            // 버튼 전환
+            const startBtn = document.getElementById('startBtn');
+            const bottomControls = document.getElementById('bottomControls');
+            const mainControls = document.querySelector('.main-controls');
+            
+            if (startBtn) startBtn.style.display = 'none';
+            if (mainControls) mainControls.style.display = 'none';
+            if (bottomControls) bottomControls.style.display = 'grid';
+            
+            showCurrentQuestion();
+            generateQuestionsList();
+            startTimer();
+            closeAllPanels();
+            hideAnswerBubble();
+            
+            // 네비게이션 버튼 상태 초기화
+            updateNavigationButtons();
+        }
+
+        // 면접 재시작
+        function restartInterview() {
+            if (confirm('면접을 처음부터 다시 시작하시겠습니까?')) {
+                if (interviewTimer) {
+                    clearInterval(interviewTimer);
+                    interviewTimer = null;
+                }
+                
+                interviewStarted = false;
+                isPaused = false;
+                totalElapsedTime = 0;
+                currentQuestionIndex = 0;
+                myAnswers = {};
+                currentAnswerMode = 'example';
+                startTime = null;
+                
+                document.getElementById('timerDisplay').textContent = '00:00';
+                document.getElementById('interviewStatus').textContent = '면접 대기중';
+                
+                const startBtn = document.getElementById('startBtn');
+                const bottomControls = document.getElementById('bottomControls');
+                const mainControls = document.querySelector('.main-controls');
+                const pauseBtn = document.getElementById('pauseBtn');
+                
+                if (startBtn) {
+                    startBtn.style.display = 'flex';
+                    startBtn.textContent = '🎯 면접 시작';
+                }
+                if (mainControls) mainControls.style.display = 'flex';
+                if (bottomControls) bottomControls.style.display = 'none';
+                
+                if (pauseBtn) {
+                    pauseBtn.textContent = '⏸️ 일시정지';
+                    pauseBtn.classList.remove('active');
+                }
+                
+                document.getElementById('bubbleQuestion').textContent = '면접을 시작하려면 하단의 \'면접 시작\' 버튼을 클릭하세요.';
+                document.getElementById('bubbleCategory').textContent = '준비중';
+                document.getElementById('bubbleInterviewer').textContent = '면접관 1';
+                document.getElementById('interviewerAvatar').textContent = '👨‍💼';
+                
+                hideExampleAnswer();
+                hideMyAnswer();
+                closeAllPanels();
+                
+                const questionItems = document.querySelectorAll('.question-item');
+                questionItems.forEach(item => {
+                    item.classList.remove('current', 'completed');
+                });
+            }
+        }
+
+        // 일시정지/재생 토글
+        function togglePause() {
+            const pauseBtn = document.getElementById('pauseBtn');
+            const interviewStatus = document.getElementById('interviewStatus');
+            
+            if (interviewStarted && !isPaused) {
+                // 일시정지
+                isPaused = true;
+                totalElapsedTime += Date.now() - startTime; // 경과 시간 누적
+                clearInterval(interviewTimer);
+                
+                if (interviewStatus) {
+                    interviewStatus.textContent = '일시정지';
+                }
+                if (pauseBtn) {
+                    pauseBtn.textContent = '▶️ 재생';
+                    pauseBtn.classList.add('active');
+                }
+                
+            } else if (isPaused) {
+                // 재생
+                isPaused = false;
+                startTime = Date.now(); // 새로운 시작 시간 설정
+                
+                if (interviewStatus) {
+                    interviewStatus.textContent = '면접 진행중';
+                }
+                if (pauseBtn) {
+                    pauseBtn.textContent = '⏸️ 일시정지';
+                    pauseBtn.classList.remove('active');
+                }
+                
+                startTimer();
+            }
+        }
+
+        // 개별 패널 닫기 시 버튼 상태 업데이트 (모바일 최적화)
+        function updateAnswerButtonState() {
+            const exampleAnswerBubbleEl = document.getElementById('exampleAnswerBubble');
+            const myAnswerBubbleEl = document.getElementById('myAnswerBubble');
+            const showExampleBtn = document.getElementById('showExampleBtn');
+            
+            let isExampleVisible = false;
+            let isMyAnswerVisible = false;
+            
+            if (exampleAnswerBubbleEl) {
+                const hasShowClass = exampleAnswerBubbleEl.classList.contains('show');
+                const displayStyle = exampleAnswerBubbleEl.style.display;
+                const computedDisplay = window.getComputedStyle(exampleAnswerBubbleEl).display;
+                const visibilityStyle = exampleAnswerBubbleEl.style.visibility;
+                const opacityStyle = exampleAnswerBubbleEl.style.opacity;
+                
+                isExampleVisible = (hasShowClass || displayStyle === 'block' || computedDisplay === 'block') && 
+                                  visibilityStyle !== 'hidden' && opacityStyle !== '0';
+            }
+            
+            if (myAnswerBubbleEl) {
+                const hasShowClass = myAnswerBubbleEl.classList.contains('show');
+                const displayStyle = myAnswerBubbleEl.style.display;
+                const computedDisplay = window.getComputedStyle(myAnswerBubbleEl).display;
+                const visibilityStyle = myAnswerBubbleEl.style.visibility;
+                const opacityStyle = myAnswerBubbleEl.style.opacity;
+                
+                isMyAnswerVisible = (hasShowClass || displayStyle === 'block' || computedDisplay === 'block') && 
+                                   visibilityStyle !== 'hidden' && opacityStyle !== '0';
+            }
+            
+            const isPanelsOpen = isExampleVisible || isMyAnswerVisible;
+            
+            if (showExampleBtn) {
+                if (isPanelsOpen) {
+                    showExampleBtn.textContent = '📖 답변닫기';
+                    showExampleBtn.style.background = 'rgba(231, 76, 60, 0.3)';
+                } else {
+                    showExampleBtn.textContent = '💡 답변보기';
+                    showExampleBtn.style.background = 'rgba(243, 156, 18, 0.2)';
+                }
+            }
+        }
+
+        // X버튼으로 모범답변 패널 닫기
+        function closeExampleAnswerPanel() {
+            try {
+                hideExampleAnswer();
+                
+                // 0.5초 후 상태 확인
+                setTimeout(() => {
+                    const exampleAnswerBubbleEl = document.getElementById('exampleAnswerBubble');
+                    if (exampleAnswerBubbleEl) {
+                        // 상태 확인 (콘솔 출력 없이)
+                    }
+                    updateAnswerButtonState();
+                }, 500);
+                
+            } catch (error) {
+                // 오류 발생 시 조용히 처리
+            }
+        }
+
+        // X버튼으로 내 답변 패널 닫기
+        function closeMyAnswerPanel() {
+            try {
+                hideMyAnswer();
+                
+                // 0.5초 후 상태 확인
+                setTimeout(() => {
+                    const myAnswerBubbleEl = document.getElementById('myAnswerBubble');
+                    if (myAnswerBubbleEl) {
+                        // 상태 확인 (콘솔 출력 없이)
+                    }
+                    updateAnswerButtonState();
+                }, 500);
+                
+            } catch (error) {
+                // 오류 발생 시 조용히 처리
+            }
+        }
+
+        // window 객체에도 함수 등록 (전역 접근 보장)
+        window.closeExampleAnswerPanel = closeExampleAnswerPanel;
+        window.closeMyAnswerPanel = closeMyAnswerPanel;
+        window.updateAnswerButtonState = updateAnswerButtonState;
+
+        // 답변 패널들 보기 (좌우 분리) - 토글 방식으로 수정
+        function showAnswerPanels() {
+            if (currentQuestionIndex < interviewQuestions.length) {
+                const exampleAnswerBubbleEl = document.getElementById('exampleAnswerBubble');
+                const myAnswerBubbleEl = document.getElementById('myAnswerBubble');
+                const showExampleBtn = document.getElementById('showExampleBtn');
+                
+                // 현재 패널들이 열려있는지 확인
+                let isExampleVisible = false;
+                let isMyAnswerVisible = false;
+                
+                if (exampleAnswerBubbleEl) {
+                    const hasShowClass = exampleAnswerBubbleEl.classList.contains('show');
+                    const displayStyle = exampleAnswerBubbleEl.style.display;
+                    const computedDisplay = window.getComputedStyle(exampleAnswerBubbleEl).display;
+                    
+                    isExampleVisible = hasShowClass || displayStyle === 'block' || computedDisplay === 'block';
+                }
+                
+                if (myAnswerBubbleEl) {
+                    const hasShowClass = myAnswerBubbleEl.classList.contains('show');
+                    const displayStyle = myAnswerBubbleEl.style.display;
+                    const computedDisplay = window.getComputedStyle(myAnswerBubbleEl).display;
+                    
+                    isMyAnswerVisible = hasShowClass || displayStyle === 'block' || computedDisplay === 'block';
+                }
+                
+                const isPanelsOpen = isExampleVisible || isMyAnswerVisible;
+                
+                if (isPanelsOpen) {
+                    // 패널들이 열려있으면 닫기
+                    hideExampleAnswer();
+                    hideMyAnswer();
+                    
+                    // 버튼 텍스트 변경
+                    if (showExampleBtn) {
+                        showExampleBtn.textContent = '💡 답변보기';
+                        showExampleBtn.style.background = 'rgba(243, 156, 18, 0.2)';
+                    }
+                } else {
+                    // 패널들이 닫혀있으면 열기
+                    showExampleAnswer();
+                    showMyAnswer();
+                    
+                    // 버튼 텍스트 변경
+                    if (showExampleBtn) {
+                        showExampleBtn.textContent = '📖 답변닫기';
+                        showExampleBtn.style.background = 'rgba(231, 76, 60, 0.3)';
+                    }
+                }
+            }
+        }
+
+        // 모범답변 보기 (좌측) - CSS 클래스 방식으로 변경
+        function showExampleAnswer() {
+            if (currentQuestionIndex < interviewQuestions.length) {
+                const question = interviewQuestions[currentQuestionIndex];
+                const exampleAnswer = question.exampleAnswer || "모범답변이 준비되지 않았습니다.";
+                
+                const exampleAnswerContentEl = document.getElementById('exampleAnswerContent');
+                const exampleAnswerBubbleEl = document.getElementById('exampleAnswerBubble');
+                
+                if (exampleAnswerContentEl) {
+                    exampleAnswerContentEl.textContent = exampleAnswer;
+                }
+                
+                if (exampleAnswerBubbleEl) {
+                    // CSS 클래스로 표시
+                    exampleAnswerBubbleEl.classList.remove('force-hidden');
+                    exampleAnswerBubbleEl.classList.add('show');
+                    
+                    // 추가로 인라인 스타일도 적용
+                    exampleAnswerBubbleEl.style.setProperty('display', 'block', 'important');
+                    exampleAnswerBubbleEl.style.setProperty('visibility', 'visible', 'important');
+                    exampleAnswerBubbleEl.style.setProperty('opacity', '1', 'important');
+                    exampleAnswerBubbleEl.style.setProperty('z-index', '1000', 'important');
+                    exampleAnswerBubbleEl.style.setProperty('position', 'fixed', 'important');
+                    exampleAnswerBubbleEl.style.setProperty('left', '10px', 'important');
+                    exampleAnswerBubbleEl.style.setProperty('top', '90px', 'important');
+                }
+            }
+        }
+
+        // 모범답변 숨기기
+        function hideExampleAnswer() {
+            const exampleAnswerBubbleEl = document.getElementById('exampleAnswerBubble');
+            if (exampleAnswerBubbleEl) {
+                exampleAnswerBubbleEl.style.display = 'none';
+            }
+        }
+
+        // 내 답변 보기/작성 (우측)
+        function showMyAnswer() {
+            if (currentQuestionIndex < interviewQuestions.length) {
+                const myAnswer = myAnswers[currentQuestionIndex] || "";
+                
+                const myAnswerContentEl = document.getElementById('myAnswerContent');
+                const myAnswerTitleEl = document.getElementById('myAnswerTitle');
+                const myAnswerBubbleEl = document.getElementById('myAnswerBubble');
+                const myEditModeEl = document.getElementById('myEditMode');
+                
+                if (myAnswerContentEl && myAnswerTitleEl) {
+                    if (myAnswer) {
+                        myAnswerContentEl.textContent = myAnswer;
+                        myAnswerTitleEl.textContent = '✏️ 내 답변';
+                    } else {
+                        myAnswerContentEl.textContent = "아직 작성한 답변이 없습니다. 아래에서 답변을 작성해보세요.";
+                        myAnswerTitleEl.textContent = '✏️ 내 답변 작성';
+                    }
+                }
+                
+                if (myAnswerContentEl) {
+                    myAnswerContentEl.style.display = 'block';
+                }
+                if (myEditModeEl) {
+                    myEditModeEl.style.display = 'none';
+                }
+                
+                // 현재 ID 정보 표시
+                if (currentUserId && myAnswerTitleEl) {
+                    const totalAnswers = Object.keys(myAnswers).length;
+                    myAnswerTitleEl.textContent = `✏️ 내 답변 (ID: ${currentUserId}, 총 ${totalAnswers}개)`;
+                }
+                
+                if (myAnswerBubbleEl) {
+                    // CSS 클래스로 표시
+                    myAnswerBubbleEl.classList.remove('force-hidden');
+                    myAnswerBubbleEl.classList.add('show');
+                    
+                    // 추가로 인라인 스타일도 적용
+                    myAnswerBubbleEl.style.setProperty('display', 'block', 'important');
+                    myAnswerBubbleEl.style.setProperty('visibility', 'visible', 'important');
+                    myAnswerBubbleEl.style.setProperty('opacity', '1', 'important');
+                    myAnswerBubbleEl.style.setProperty('z-index', '1000', 'important');
+                    myAnswerBubbleEl.style.setProperty('position', 'fixed', 'important');
+                    myAnswerBubbleEl.style.setProperty('left', '50%', 'important');
+                    myAnswerBubbleEl.style.setProperty('top', '90px', 'important');
+                }
+                
+                setTimeout(() => {
+                    toggleMyEditMode();
+                }, 100);
+            }
+        }
+
+        // 내 답변 숨기기
+        function hideMyAnswer() {
+            const myAnswerBubbleEl = document.getElementById('myAnswerBubble');
+            const myEditModeEl = document.getElementById('myEditMode');
+            
+            if (myAnswerBubbleEl) {
+                myAnswerBubbleEl.style.display = 'none';
+            }
+            if (myEditModeEl && myEditModeEl.style.display !== 'none') {
+                cancelMyEdit();
+            }
+        }
+
+        // 내 답변 편집 모드 토글
+        function toggleMyEditMode() {
+            const editMode = document.getElementById('myEditMode');
+            const answerContent = document.getElementById('myAnswerContent');
+            const textarea = document.getElementById('myAnswerTextarea');
+            
+            if (editMode && answerContent && textarea) {
+                if (editMode.style.display === 'none') {
+                    editMode.style.display = 'block';
+                    answerContent.style.display = 'none';
+                    
+                    const myAnswer = myAnswers[currentQuestionIndex] || "";
+                    textarea.value = myAnswer;
+                    textarea.focus();
+                } else {
+                    cancelMyEdit();
+                }
+            }
+        }
+
+        // 내 답변 편집 취소
+        function cancelMyEdit() {
+            const myEditModeEl = document.getElementById('myEditMode');
+            const myAnswerContentEl = document.getElementById('myAnswerContent');
+            
+            if (myEditModeEl) {
+                myEditModeEl.style.display = 'none';
+            }
+            if (myAnswerContentEl) {
+                myAnswerContentEl.style.display = 'block';
+            }
+        }
+
+        // 브라우저 localStorage 기반 영구 저장 시스템
+        let savedAnswersData = {};
+        const STORAGE_KEY = 'jnu_interview_answers';
+        
+        function loadAnswersFromStorage() {
+            try {
+                // localStorage 시도 (모바일에서 영구 저장)
+                let savedData = null;
+                if (typeof localStorage !== 'undefined') {
+                    savedData = localStorage.getItem(STORAGE_KEY);
+                }
+                
+                // localStorage 실패 시 sessionStorage 사용
+                if (!savedData && typeof sessionStorage !== 'undefined') {
+                    savedData = sessionStorage.getItem(STORAGE_KEY);
+                }
+                
+                if (savedData && savedData !== 'null' && savedData !== '{}') {
+                    const parsedData = JSON.parse(savedData);
+                    
+                    // 안전한 복사
+                    savedAnswersData = {};
+                    for (let userId in parsedData) {
+                        savedAnswersData[userId] = {};
+                        for (let questionId in parsedData[userId]) {
+                            savedAnswersData[userId][questionId] = parsedData[userId][questionId];
+                        }
+                    }
+                    
+                    return true;
+                } else {
+                    savedAnswersData = {};
+                    return false;
+                }
+            } catch (error) {
+                savedAnswersData = {};
+                return false;
+            }
+        }
+
+        function saveAnswersToStorage() {
+            try {
+                const dataString = JSON.stringify(savedAnswersData);
+                
+                // localStorage에 우선 저장 시도 (영구 저장)
+                if (typeof localStorage !== 'undefined') {
+                    localStorage.setItem(STORAGE_KEY, dataString);
+                    
+                    // 저장 후 확인
+                    const verification = localStorage.getItem(STORAGE_KEY);
+                    return true;
+                }
+                
+                // localStorage 실패 시 sessionStorage 사용
+                if (typeof sessionStorage !== 'undefined') {
+                    sessionStorage.setItem(STORAGE_KEY, dataString);
+                    
+                    // 저장 후 확인
+                    const verification = sessionStorage.getItem(STORAGE_KEY);
+                    return true;
+                }
+                
+                return false;
+            } catch (error) {
+                return false;
+            }
+        }
+
+        function generateUserId() {
+            const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+            let result = '';
+            for (let i = 0; i < 8; i++) {
+                result += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return result;
+        }
+
+        // 강제 저장 함수
+        function forceSaveAnswer() {
+            if (!currentUserId) {
+                return false;
+            }
+            
+            // savedAnswersData 강제 업데이트
+            if (!savedAnswersData[currentUserId]) {
+                savedAnswersData[currentUserId] = {};
+            }
+            
+            // myAnswers의 모든 내용을 savedAnswersData에 복사
+            for (let key in myAnswers) {
+                savedAnswersData[currentUserId][key] = myAnswers[key];
+            }
+            
+            // localStorage에 즉시 저장
+            try {
+                const dataToSave = JSON.stringify(savedAnswersData);
+                
+                if (typeof localStorage !== 'undefined') {
+                    localStorage.setItem(STORAGE_KEY, dataToSave);
+                    
+                    // 저장 후 즉시 확인
+                    const verification = localStorage.getItem(STORAGE_KEY);
+                    return true;
+                } else if (typeof sessionStorage !== 'undefined') {
+                    sessionStorage.setItem(STORAGE_KEY, dataToSave);
+                    return true;
+                }
+            } catch (e) {
+                return false;
+            }
+            
+            return false;
+        }
+
+        function loadAnswersFromMemory(userId) {
+            try {
+                // 먼저 로컬 메모리에서 확인
+                if (userId && savedAnswersData[userId] && Object.keys(savedAnswersData[userId]).length > 0) {
+                    myAnswers = {};
+                    // 수동으로 복사
+                    for (let key in savedAnswersData[userId]) {
+                        myAnswers[key] = savedAnswersData[userId][key];
+                    }
+                    isDataLoaded = true;
+                    return true;
+                } else {
+                    myAnswers = {};
+                    return false;
+                }
+            } catch (error) {
+                myAnswers = {};
+                return false;
+            }
+        }
+
+        function generateShareableLink() {
+            if (!currentUserId) return null;
+            
+            try {
+                const answersData = JSON.stringify(myAnswers);
+                const encodedData = btoa(unescape(encodeURIComponent(answersData)));
+                
+                // 현재 페이지 URL 기반으로 공유 링크 생성
+                const baseUrl = window.location.href.split('?')[0];
+                return `${baseUrl}?id=${currentUserId}&data=${encodedData}`;
+            } catch (error) {
+                return null;
+            }
+        }
+
+        function loadFromUrl() {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                const userId = urlParams.get('id');
+                const encodedData = urlParams.get('data');
+                
+                if (userId) {
+                    currentUserId = userId;
+                    
+                    if (encodedData) {
+                        try {
+                            const answersData = decodeURIComponent(escape(atob(encodedData)));
+                            myAnswers = JSON.parse(answersData);
+                            savedAnswersData[userId] = JSON.parse(JSON.stringify(myAnswers));
+                            saveAnswersToStorage(); // 브라우저 저장소에 저장
+                            isDataLoaded = true;
+                        } catch (parseError) {
+                            // URL 파싱 실패 시 메모리에서 불러오기 시도
+                            loadAnswersFromMemory(userId);
+                        }
+                    } else {
+                        // URL에 데이터가 없으면 저장소에서 불러오기
+                        loadAnswersFromMemory(userId);
+                    }
+                    
+                    updateCurrentIdDisplay();
+                    return true;
+                }
+            } catch (error) {
+                // 오류 발생 시 조용히 처리
+            }
+            return false;
+        }
+
+        function updateCurrentIdDisplay() {
+            const currentIdDisplay = document.getElementById('currentIdDisplay');
+            const answerCountDisplay = document.getElementById('answerCountDisplay');
+            
+            if (currentIdDisplay) {
+                currentIdDisplay.textContent = currentUserId || '없음';
+            }
+            
+            if (answerCountDisplay) {
+                const answerCount = Object.keys(myAnswers).length;
+                answerCountDisplay.textContent = `${answerCount}개`;
+            }
+            
+            // 버튼 표시/숨김 처리를 더 안전하게
+            try {
+                const shareBtn = document.querySelector('.modal-btn.share');
+                const deleteBtn = document.querySelector('.modal-btn.danger');
+                const debugBtn = document.querySelector('.modal-btn.secondary');
+                
+                if (shareBtn && deleteBtn && debugBtn) {
+                    if (currentUserId) {
+                        shareBtn.style.display = 'inline-block';
+                        deleteBtn.style.display = 'inline-block';
+                        debugBtn.style.display = 'inline-block';
+                    } else {
+                        shareBtn.style.display = 'none';
+                        deleteBtn.style.display = 'none';
+                        debugBtn.style.display = 'none';
+                    }
+                }
+            } catch (error) {
+                // 버튼 업데이트 오류 시 조용히 처리
+            }
+        }
+
+        function debugCurrentData() {
+            // 브라우저 저장소 확인
+            let localData = null;
+            let sessionData = null;
+            
+            try {
+                if (typeof localStorage !== 'undefined') {
+                    localData = localStorage.getItem(STORAGE_KEY);
+                }
+                if (typeof sessionStorage !== 'undefined') {
+                    sessionData = sessionStorage.getItem(STORAGE_KEY);
+                }
+            } catch (e) {
+                // 저장소 접근 오류 시 조용히 처리
+            }
+            
+            let localAnswers = {};
+            let sessionAnswers = {};
+            
+            if (localData) {
+                try {
+                    localAnswers = JSON.parse(localData);
+                } catch (e) {
+                    // localStorage 파싱 오류 시 조용히 처리
+                }
+            }
+            
+            if (sessionData) {
+                try {
+                    sessionAnswers = JSON.parse(sessionData);
+                } catch (e) {
+                    // sessionStorage 파싱 오류 시 조용히 처리
+                }
+            }
+            
+            const message = `=== 디버깅 정보 ===
+현재 ID: ${currentUserId || '없음'}
+현재 답변: ${Object.keys(myAnswers).length}개
+메모리 ID들: ${Object.keys(savedAnswersData).join(', ') || '없음'}
+localStorage ID들: ${Object.keys(localAnswers).join(', ') || '없음'}
+sessionStorage ID들: ${Object.keys(sessionAnswers).join(', ') || '없음'}
+현재 질문: ${currentQuestionIndex + 1}번
+
+답변 목록:
+${Object.entries(myAnswers).map(([index, answer]) => `Q${parseInt(index) + 1}: ${answer ? answer.substring(0, 50) + '...' : '없음'}`).join('\n') || '없음'}
+
+저장소 상태:
+localStorage 사용 가능: ${typeof localStorage !== 'undefined'}
+sessionStorage 사용 가능: ${typeof sessionStorage !== 'undefined'}`;
+            
+            alert(message);
+        }
+
+        // 사용자 ID 모달 관련 함수들
+        function showUserIdModal() {
+            updateCurrentIdDisplay();
+            const userIdModal = document.getElementById('userIdModal');
+            if (userIdModal) {
+                userIdModal.style.display = 'flex';
+            }
+            
+            // 모바일에서 스크롤 방지
+            if (isMobileDevice()) {
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function hideUserIdModal() {
+            const userIdModal = document.getElementById('userIdModal');
+            const newIdInput = document.getElementById('newIdInput');
+            const loadIdInput = document.getElementById('loadIdInput');
+            
+            if (userIdModal) {
+                userIdModal.style.display = 'none';
+            }
+            if (newIdInput) {
+                newIdInput.value = '';
+            }
+            if (loadIdInput) {
+                loadIdInput.value = '';
+            }
+            
+            // 모바일에서 스크롤 복원
+            if (isMobileDevice()) {
+                document.body.style.overflow = '';
+            }
+        }
+
+        function createNewId() {
+            const newIdInput = document.getElementById('newIdInput');
+            if (!newIdInput) {
+                alert('입력 필드를 찾을 수 없습니다.');
+                return;
+            }
+            
+            const newId = newIdInput.value.trim();
+            
+            if (!newId) {
+                alert('ID를 입력해주세요.');
+                return;
+            }
+            
+            if (newId.length < 3) {
+                alert('ID는 3글자 이상이어야 합니다.');
+                return;
+            }
+            
+            if (!/^[a-zA-Z0-9]+$/.test(newId)) {
+                alert('ID는 영문자와 숫자만 사용할 수 있습니다.');
+                return;
+            }
+            
+            try {
+                currentUserId = newId.toLowerCase();
+                myAnswers = {}; // 새 ID이므로 답변 초기화
+                
+                // savedAnswersData에 빈 객체가 아닌 실제 객체 생성
+                if (!savedAnswersData[currentUserId]) {
+                    savedAnswersData[currentUserId] = {};
+                }
+                
+                // 즉시 저장소에 저장 (빈 객체라도 일단 저장)
+                try {
+                    const dataToSave = JSON.stringify(savedAnswersData);
+                    
+                    if (typeof localStorage !== 'undefined') {
+                        localStorage.setItem(STORAGE_KEY, dataToSave);
+                    }
+                } catch (e) {
+                    // 저장 실패 시 조용히 처리
+                }
+                
+                updateCurrentIdDisplay();
+                hideUserIdModal();
+                
+                alert(`✅ ID '${currentUserId}'가 생성되었습니다!\n이제 답변을 작성하면 자동으로 저장됩니다.`);
+                
+            } catch (error) {
+                alert('ID 생성 중 오류가 발생했습니다. 다시 시도해주세요.');
+            }
+        }
+
+        function generateRandomId() {
+            const randomId = generateUserId();
+            document.getElementById('newIdInput').value = randomId;
+        }
+
+        function loadExistingId() {
+            const loadIdInput = document.getElementById('loadIdInput');
+            if (!loadIdInput) {
+                alert('입력 필드를 찾을 수 없습니다.');
+                return;
+            }
+            
+            const loadId = loadIdInput.value.trim();
+            
+            if (!loadId) {
+                alert('불러올 ID를 입력해주세요.');
+                return;
+            }
+            
+            try {
+                // 현재 사용자 ID 설정
+                currentUserId = loadId.toLowerCase();
+                
+                // localStorage에서 직접 읽기
+                let rawData = null;
+                try {
+                    rawData = localStorage.getItem(STORAGE_KEY);
+                } catch (e) {
+                    // localStorage 접근 실패 시 조용히 처리
+                }
+                
+                if (rawData && rawData !== 'null' && rawData !== '{}') {
+                    try {
+                        const allData = JSON.parse(rawData);
+                        
+                        if (allData[currentUserId] && Object.keys(allData[currentUserId]).length > 0) {
+                            // 답변 복구
+                            myAnswers = {};
+                            savedAnswersData = allData; // 전체 데이터 복원
+                            
+                            for (let key in allData[currentUserId]) {
+                                myAnswers[key] = allData[currentUserId][key];
+                            }
+                            
+                            const answerCount = Object.keys(myAnswers).length;
+                            alert(`🎉 ID '${currentUserId}' 접속 성공!\n저장된 답변 ${answerCount}개를 불러왔습니다!`);
+                        } else {
+                            myAnswers = {};
+                            savedAnswersData = allData; // 기존 데이터는 유지
+                            alert(`✅ ID '${currentUserId}'로 접속했습니다!\n저장된 답변이 없습니다. 새로 작성해보세요.`);
+                        }
+                    } catch (parseError) {
+                        myAnswers = {};
+                        savedAnswersData = {};
+                        alert('❌ 저장된 데이터 읽기 실패. 새로 시작합니다.');
+                    }
+                } else {
+                    myAnswers = {};
+                    savedAnswersData = {};
+                    alert(`✅ ID '${currentUserId}'로 접속했습니다!\n저장된 데이터가 없습니다. 새로 시작해보세요.`);
+                }
+                
+                updateCurrentIdDisplay();
+                hideUserIdModal();
+                
+                // 현재 답변 패널이 열려있다면 새로고침
+                const myAnswerBubbleEl = document.getElementById('myAnswerBubble');
+                if (myAnswerBubbleEl && myAnswerBubbleEl.style.display === 'block') {
+                    showMyAnswer();
+                }
+                
+            } catch (error) {
+                alert('ID 불러오기 중 오류가 발생했습니다. 다시 시도해주세요.');
+            }
+        }
+
+        function shareCurrentId() {
+            if (!currentUserId) {
+                alert('공유할 ID가 없습니다.');
+                return;
+            }
+            
+            const shareLink = generateShareableLink();
+            if (!shareLink) {
+                alert('공유 링크 생성에 실패했습니다.');
+                return;
+            }
+            
+            if (navigator.share && isMobileDevice()) {
+                // 모바일 네이티브 공유
+                navigator.share({
+                    title: '전북대학교 사서직 면접 - 내 답변',
+                    text: `면접 답변을 확인해보세요! ID: ${currentUserId}`,
+                    url: shareLink
+                }).catch(() => {
+                    // 네이티브 공유 실패 시 클립보드로 복사
+                    copyToClipboard(shareLink);
+                });
+            } else {
+                // 데스크톱에서는 클립보드로 복사
+                copyToClipboard(shareLink);
+            }
+        }
+
+        function copyToClipboard(text) {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('✅ 링크가 클립보드에 복사되었습니다!\n친구에게 공유해보세요.');
+                }).catch(() => {
+                    showTextToCopy(text);
+                });
+            } else {
+                showTextToCopy(text);
+            }
+        }
+
+        function showTextToCopy(text) {
+            const message = `아래 링크를 복사해서 공유하세요:\n\n${text}`;
+            if (window.prompt) {
+                window.prompt('링크를 복사하세요:', text);
+            } else {
+                alert(message);
+            }
+        }
+
+        function resetUserId() {
+            if (!currentUserId) {
+                alert('삭제할 ID가 없습니다.');
+                return;
+            }
+            
+            if (confirm(`정말로 ID '${currentUserId}'와 모든 답변을 삭제하시겠습니까?\n(브라우저에서 영구 삭제됩니다)`)) {
+                try {
+                    // 메모리에서 해당 ID 데이터 삭제
+                    if (savedAnswersData[currentUserId]) {
+                        delete savedAnswersData[currentUserId];
+                        saveAnswersToStorage(); // 브라우저 저장소에서도 삭제
+                    }
+                    
+                    currentUserId = null;
+                    myAnswers = {};
+                    
+                    updateCurrentIdDisplay();
+                    hideUserIdModal();
+                    
+                    alert('✅ ID와 답변이 브라우저에서 삭제되었습니다.');
+                    
+                } catch (error) {
+                    alert('ID 삭제 중 오류가 발생했습니다.');
+                }
+            }
+        }
+
+        // 기존 내 답변 저장 함수 수정
+        function saveMyAnswer() {
+            const textarea = document.getElementById('myAnswerTextarea');
+            const myAnswerContentEl = document.getElementById('myAnswerContent');
+            const myAnswerTitleEl = document.getElementById('myAnswerTitle');
+            
+            if (!textarea) return;
+            
+            const answerText = textarea.value.trim();
+            
+            if (answerText) {
+                myAnswers[currentQuestionIndex] = answerText;
+                if (myAnswerContentEl) {
+                    myAnswerContentEl.textContent = answerText;
+                }
+                if (myAnswerTitleEl) {
+                    myAnswerTitleEl.textContent = '✏️ 내 답변';
+                }
+            } else {
+                delete myAnswers[currentQuestionIndex];
+                if (myAnswerContentEl) {
+                    myAnswerContentEl.textContent = "아직 작성한 답변이 없습니다.";
+                }
+                if (myAnswerTitleEl) {
+                    myAnswerTitleEl.textContent = '✏️ 내 답변 작성';
+                }
+            }
+            
+            cancelMyEdit();
+        }
+
+        // 편집 취소 (호환성을 위해 유지)
+        function cancelEdit() {
+            const editModeEl = document.getElementById('editMode');
+            const answerContentEl = document.getElementById('answerContent');
+            
+            if (editModeEl) {
+                editModeEl.style.display = 'none';
+            }
+            if (answerContentEl) {
+                answerContentEl.style.display = 'block';
+            }
+        }
+
+        // 답변 말풍선 숨기기 (호환성을 위해 유지)
+        function hideAnswerBubble() {
+            const answerBubbleEl = document.getElementById('answerBubble');
+            const editModeEl = document.getElementById('editMode');
+            
+            if (answerBubbleEl) {
+                answerBubbleEl.style.display = 'none';
+            }
+            if (editModeEl && editModeEl.style.display !== 'none') {
+                cancelEdit();
+            }
+        }
+
+        // 타이머 시작
+        function startTimer() {
+            if (interviewTimer) {
+                clearInterval(interviewTimer);
+            }
+            
+            interviewTimer = setInterval(() => {
+                if (!isPaused && startTime) {
+                    const currentElapsed = totalElapsedTime + (Date.now() - startTime);
+                    const elapsed = Math.floor(currentElapsed / 1000);
+                    const minutes = Math.floor(elapsed / 60);
+                    const seconds = elapsed % 60;
+                    
+                    const timerDisplay = document.getElementById('timerDisplay');
+                    if (timerDisplay) {
+                        timerDisplay.textContent = 
+                            `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                    }
+                }
+            }, 1000);
+        }
+
+        // 이전 질문으로 이동
+        function previousQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                showCurrentQuestion();
+                updateQuestionsList();
+                
+                // 답변 패널이 열려있다면 새로운 질문의 답변으로 업데이트
+                const exampleAnswerBubbleEl = document.getElementById('exampleAnswerBubble');
+                const myAnswerBubbleEl = document.getElementById('myAnswerBubble');
+                const isPanelsOpen = (exampleAnswerBubbleEl && exampleAnswerBubbleEl.classList.contains('show')) || 
+                                   (myAnswerBubbleEl && myAnswerBubbleEl.classList.contains('show'));
+                
+                if (isPanelsOpen) {
+                    // 답변 패널 업데이트 (콘솔 출력 없이)
+                    showExampleAnswer();
+                    showMyAnswer();
+                }
+                
+                // 이전 질문으로 이동 시 저장된 답변이 있으면 알림
+                if (myAnswers[currentQuestionIndex]) {
+                    const savedAnswer = myAnswers[currentQuestionIndex];
+                    // 저장된 답변이 있음을 조용히 확인 (콘솔 출력 없이)
+                }
+            } else {
+                alert('첫 번째 질문입니다!');
+            }
+            
+            updateNavigationButtons();
+        }
+
+        // 다음 질문으로 이동 (기존 함수 수정)
+        function nextQuestion() {
+            if (currentQuestionIndex < interviewQuestions.length - 1) {
+                currentQuestionIndex++;
+                showCurrentQuestion();
+                updateQuestionsList();
+                
+                // 답변 패널이 열려있다면 새로운 질문의 답변으로 업데이트
+                const exampleAnswerBubbleEl = document.getElementById('exampleAnswerBubble');
+                const myAnswerBubbleEl = document.getElementById('myAnswerBubble');
+                const isPanelsOpen = (exampleAnswerBubbleEl && exampleAnswerBubbleEl.classList.contains('show')) || 
+                                   (myAnswerBubbleEl && myAnswerBubbleEl.classList.contains('show'));
+                
+                if (isPanelsOpen) {
+                    // 답변 패널 업데이트 (콘솔 출력 없이)
+                    showExampleAnswer();
+                    showMyAnswer();
+                }
+                
+                // 다음 질문으로 이동 시 저장된 답변이 있으면 알림
+                if (myAnswers[currentQuestionIndex]) {
+                    const savedAnswer = myAnswers[currentQuestionIndex];
+                    // 저장된 답변이 있음을 조용히 확인 (콘솔 출력 없이)
+                }
+            } else {
+                if (confirm('모든 질문이 완료되었습니다. 면접을 종료하시겠습니까?')) {
+                    endInterview();
+                }
+            }
+            
+            updateNavigationButtons();
+        }
+
+        // 네비게이션 버튼 상태 업데이트
+        function updateNavigationButtons() {
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            if (prevBtn) {
+                if (currentQuestionIndex === 0) {
+                    prevBtn.style.opacity = '0.5';
+                    prevBtn.style.background = 'linear-gradient(45deg, #95a5a6, #7f8c8d)';
+                } else {
+                    prevBtn.style.opacity = '1';
+                    prevBtn.style.background = 'linear-gradient(45deg, #3498db, #2980b9)';
+                }
+            }
+            
+            if (nextBtn) {
+                if (currentQuestionIndex === interviewQuestions.length - 1) {
+                    nextBtn.textContent = '✅ 면접완료';
+                    nextBtn.style.background = 'linear-gradient(45deg, #27ae60, #2ecc71)';
+                } else {
+                    nextBtn.textContent = '➡️ 다음질문';
+                    nextBtn.style.background = 'linear-gradient(45deg, #3498db, #2980b9)';
+                }
+            }
+        }
+
+        // 면접 종료
+        function endInterview() {
+            interviewStarted = false;
+            isPaused = false;
+            clearInterval(interviewTimer);
+            
+            const interviewStatus = document.getElementById('interviewStatus');
+            const bubbleQuestion = document.getElementById('bubbleQuestion');
+            const bubbleCategory = document.getElementById('bubbleCategory');
+            const bubbleInterviewer = document.getElementById('bubbleInterviewer');
+            const pauseBtn = document.getElementById('pauseBtn');
+            
+            if (interviewStatus) {
+                interviewStatus.textContent = '면접 완료';
+            }
+            if (bubbleQuestion) {
+                bubbleQuestion.textContent = '면접이 완료되었습니다. 수고하셨습니다!';
+            }
+            if (bubbleCategory) {
+                bubbleCategory.textContent = '면접 완료';
+            }
+            if (bubbleInterviewer) {
+                bubbleInterviewer.textContent = '모든 면접관';
+            }
+            if (pauseBtn) {
+                pauseBtn.textContent = '⏸️ 일시정지';
+                pauseBtn.classList.remove('active');
+            }
+            
+            alert('🎉 면접이 완료되었습니다!\n수고하셨습니다!');
+        }
+
+        // Three.js 초기화 (모바일 최적화)
+        function initThreeJS() {
+            try {
+                const container = document.getElementById('canvas-container');
+                if (!container) {
+                    return;
+                }
+                
+                // Scene 설정
+                scene = new THREE.Scene();
+                scene.background = new THREE.Color(0x87CEEB);
+                if (!isMobileDevice()) {
+                    scene.fog = new THREE.Fog(0x87CEEB, 30, 80);
+                }
+
+                // Camera 설정
+                camera = new THREE.PerspectiveCamera(60, container.clientWidth / container.clientHeight, 0.1, 1000);
+                camera.position.copy(cameraPosition);
+                camera.lookAt(cameraTarget);
+
+                // Renderer 설정 (모바일 최적화)
+                renderer = new THREE.WebGLRenderer({ 
+                    antialias: !isMobileDevice(),
+                    alpha: false,
+                    powerPreference: isMobileDevice() ? "low-power" : "high-performance"
+                });
+                renderer.setSize(container.clientWidth, container.clientHeight);
+                
+                if (isMobileDevice()) {
+                    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+                    renderer.shadowMap.enabled = false;
+                } else {
+                    renderer.shadowMap.enabled = true;
+                    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+                }
+                
+                renderer.setClearColor(0x87CEEB);
+                container.appendChild(renderer.domElement);
+
+                // 조명 설정
+                setupLighting();
+
+                // 면접실 구성
+                createInterviewRoom();
+
+                // 마우스/터치 컨트롤
+                setupControls(container);
+
+                // 애니메이션 시작
+                animate();
+
+                // 윈도우 리사이즈 이벤트
+                window.addEventListener('resize', onWindowResize);
+                
+            } catch (error) {
+                // 에러 발생 시 조용히 처리
+            }
+        }
+
+        // 조명 설정 (모바일 최적화)
+        function setupLighting() {
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+            scene.add(ambientLight);
+
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+            directionalLight.position.set(0, 15, 5);
+            
+            if (!isMobileDevice()) {
+                directionalLight.castShadow = true;
+                directionalLight.shadow.mapSize.width = 1024;
+                directionalLight.shadow.mapSize.height = 1024;
+                directionalLight.shadow.camera.near = 0.5;
+                directionalLight.shadow.camera.far = 50;
+                directionalLight.shadow.camera.left = -15;
+                directionalLight.shadow.camera.right = 15;
+                directionalLight.shadow.camera.top = 15;
+                directionalLight.shadow.camera.bottom = -15;
+            }
+            
+            scene.add(directionalLight);
+
+            const sideLight = new THREE.DirectionalLight(0x87CEEB, 0.2);
+            sideLight.position.set(-10, 8, 2);
+            scene.add(sideLight);
+        }
+
+        // 면접실 생성 (모바일 최적화)
+        function createInterviewRoom() {
+            // 바닥
+            const floorGeometry = new THREE.PlaneGeometry(25, 20);
+            const floorMaterial = new THREE.MeshLambertMaterial({ color: 0xc0c0c0 });
+            const floor = new THREE.Mesh(floorGeometry, floorMaterial);
+            floor.rotation.x = -Math.PI / 2;
+            if (!isMobileDevice()) floor.receiveShadow = true;
+            scene.add(floor);
+
+            // 뒷벽
+            const backWallGeometry = new THREE.PlaneGeometry(25, 12);
+            const backWallMaterial = new THREE.MeshLambertMaterial({ color: 0xf5f5dc });
+            const backWall = new THREE.Mesh(backWallGeometry, backWallMaterial);
+            backWall.position.set(0, 6, -10);
+            if (!isMobileDevice()) backWall.receiveShadow = true;
+            scene.add(backWall);
+
+            // 좌측벽
+            const leftWallGeometry = new THREE.PlaneGeometry(20, 12);
+            const leftWall = new THREE.Mesh(leftWallGeometry, backWallMaterial);
+            leftWall.position.set(-12.5, 6, 0);
+            leftWall.rotation.y = Math.PI / 2;
+            if (!isMobileDevice()) leftWall.receiveShadow = true;
+            scene.add(leftWall);
+
+            // 우측벽
+            const rightWall = new THREE.Mesh(leftWallGeometry, backWallMaterial);
+            rightWall.position.set(12.5, 6, 0);
+            rightWall.rotation.y = -Math.PI / 2;
+            if (!isMobileDevice()) rightWall.receiveShadow = true;
+            scene.add(rightWall);
+
+            // 천장
+            const ceilingGeometry = new THREE.PlaneGeometry(25, 20);
+            const ceilingMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });
+            const ceiling = new THREE.Mesh(ceilingGeometry, ceilingMaterial);
+            ceiling.position.y = 12;
+            ceiling.rotation.x = Math.PI / 2;
+            scene.add(ceiling);
+
+            // 형광등 (모바일에서는 단순화)
+            if (!isMobileDevice()) {
+                createFluorescentLights();
+            }
+
+            // 면접용 테이블
+            const tableGeometry = new THREE.BoxGeometry(6, 0.15, 2.5);
+            const tableMaterial = new THREE.MeshLambertMaterial({ color: 0x8b4513 });
+            const table = new THREE.Mesh(tableGeometry, tableMaterial);
+            table.position.set(0, 1.5, 0);
+            if (!isMobileDevice()) {
+                table.castShadow = true;
+                table.receiveShadow = true;
+            }
+            scene.add(table);
+
+            // 테이블 다리
+            createTableLegs();
+
+            // 전북대학교 로고/현판
+            createUniversitySign();
+
+            // 창문 (모바일에서는 단순화)
+            if (!isMobileDevice()) {
+                createWindows();
+            }
+
+            // 면접관 책상 소품 (모바일에서는 단순화)
+            createDeskItems();
+
+            // 의자들
+            createChairs();
+
+            // 면접관들
+            createInterviewers();
+
+            // 면접자
+            createInterviewee();
+        }
+
+        // 형광등 생성
+        function createFluorescentLights() {
+            for (let i = -8; i <= 8; i += 8) {
+                for (let j = -6; j <= 6; j += 6) {
+                    const lightGeometry = new THREE.BoxGeometry(3, 0.2, 1);
+                    const lightMaterial = new THREE.MeshLambertMaterial({ 
+                        color: 0xffffff,
+                        emissive: 0xffffff,
+                        emissiveIntensity: 0.2
+                    });
+                    const light = new THREE.Mesh(lightGeometry, lightMaterial);
+                    light.position.set(i, 11.5, j);
+                    scene.add(light);
+                }
+            }
+        }
+
+        // 테이블 다리
+        function createTableLegs() {
+            const legGeometry = new THREE.BoxGeometry(0.15, 1.4, 0.15);
+            const legMaterial = new THREE.MeshLambertMaterial({ color: 0x654321 });
+            
+            const legPositions = [
+                [-2.8, 0.7, -1], [2.8, 0.7, -1],
+                [-2.8, 0.7, 1], [2.8, 0.7, 1]
+            ];
+            
+            legPositions.forEach(pos => {
+                const leg = new THREE.Mesh(legGeometry, legMaterial);
+                leg.position.set(...pos);
+                if (!isMobileDevice()) leg.castShadow = true;
+                scene.add(leg);
+            });
+        }
+
+        // 전북대학교 현판
+        function createUniversitySign() {
+            const signGeometry = new THREE.BoxGeometry(4, 0.8, 0.1);
+            const signMaterial = new THREE.MeshLambertMaterial({ color: 0x2c3e50 });
+            const sign = new THREE.Mesh(signGeometry, signMaterial);
+            sign.position.set(0, 8, -9.9);
+            scene.add(sign);
+
+            const textGeometry = new THREE.BoxGeometry(3.5, 0.3, 0.05);
+            const textMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });
+            const text = new THREE.Mesh(textGeometry, textMaterial);
+            text.position.set(0, 8, -9.85);
+            scene.add(text);
+        }
+
+        // 창문
+        function createWindows() {
+            const windowGeometry = new THREE.PlaneGeometry(3, 4);
+            const windowMaterial = new THREE.MeshLambertMaterial({ 
+                color: 0x87CEEB,
+                transparent: true,
+                opacity: 0.7
+            });
+            
+            const leftWindow = new THREE.Mesh(windowGeometry, windowMaterial);
+            leftWindow.position.set(-12.4, 6, -3);
+            leftWindow.rotation.y = Math.PI / 2;
+            scene.add(leftWindow);
+
+            const frameGeometry = new THREE.BoxGeometry(0.1, 4.2, 3.2);
+            const frameMaterial = new THREE.MeshLambertMaterial({ color: 0x8b4513 });
+            const leftFrame = new THREE.Mesh(frameGeometry, frameMaterial);
+            leftFrame.position.set(-12.45, 6, -3);
+            scene.add(leftFrame);
+        }
+
+        // 책상 소품들 (모바일 최적화)
+        function createDeskItems() {
+            const positions = [
+                { x: -1.5, z: 1 },
+                { x: 0, z: 1 },
+                { x: 1.5, z: 1 }
+            ];
+
+            positions.forEach(pos => {
+                const paperGeometry = new THREE.BoxGeometry(0.8, 0.05, 0.6);
+                const paperMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });
+                const papers = new THREE.Mesh(paperGeometry, paperMaterial);
+                papers.position.set(pos.x, 1.63, pos.z);
+                if (!isMobileDevice()) papers.castShadow = true;
+                scene.add(papers);
+
+                if (!isMobileDevice()) {
+                    const penGeometry = new THREE.CylinderGeometry(0.02, 0.02, 0.5);
+                    const penMaterial = new THREE.MeshLambertMaterial({ color: 0x000080 });
+                    const pen = new THREE.Mesh(penGeometry, penMaterial);
+                    pen.position.set(pos.x + 0.3, 1.68, pos.z + 0.2);
+                    pen.rotation.z = Math.PI / 2;
+                    pen.castShadow = true;
+                    scene.add(pen);
+                }
+            });
+
+            const bottleGeometry = new THREE.CylinderGeometry(0.08, 0.08, 0.6);
+            const bottleMaterial = new THREE.MeshLambertMaterial({ 
+                color: 0x87CEEB,
+                transparent: true,
+                opacity: 0.8
+            });
+            const bottle = new THREE.Mesh(bottleGeometry, bottleMaterial);
+            bottle.position.set(2, 1.85, 0.5);
+            if (!isMobileDevice()) bottle.castShadow = true;
+            scene.add(bottle);
+        }
+
+        // 의자 생성 (모바일 최적화)
+        function createChairs() {
+            const chairPositions = [
+                { x: 0, z: -4, type: 'interviewee' },
+                { x: -1.5, z: 2.5, type: 'interviewer' },
+                { x: 0, z: 2.5, type: 'interviewer' },
+                { x: 1.5, z: 2.5, type: 'interviewer' }
+            ];
+
+            chairPositions.forEach(pos => {
+                const chairGroup = new THREE.Group();
+                
+                const seatGeometry = new THREE.BoxGeometry(1, 0.12, 1);
+                const seatMaterial = new THREE.MeshLambertMaterial({ 
+                    color: pos.type === 'interviewee' ? 0x2980b9 : 0x34495e 
+                });
+                const seat = new THREE.Mesh(seatGeometry, seatMaterial);
+                seat.position.y = 0.9;
+                if (!isMobileDevice()) seat.castShadow = true;
+                chairGroup.add(seat);
+
+                const backGeometry = new THREE.BoxGeometry(1, 1.5, 0.15);
+                const back = new THREE.Mesh(backGeometry, seatMaterial);
+                back.position.set(0, 1.65, -0.42);
+                if (!isMobileDevice()) back.castShadow = true;
+                chairGroup.add(back);
+
+                const poleGeometry = new THREE.CylinderGeometry(0.08, 0.08, 0.9);
+                const poleMaterial = new THREE.MeshLambertMaterial({ color: 0x2c3e50 });
+                const pole = new THREE.Mesh(poleGeometry, poleMaterial);
+                pole.position.y = 0.45;
+                if (!isMobileDevice()) pole.castShadow = true;
+                chairGroup.add(pole);
+
+                // 모바일에서는 의자 바퀴 단순화
+                if (!isMobileDevice()) {
+                    for (let i = 0; i < 5; i++) {
+                        const angle = (i / 5) * Math.PI * 2;
+                        const armGeometry = new THREE.CylinderGeometry(0.03, 0.03, 0.6);
+                        const arm = new THREE.Mesh(armGeometry, poleMaterial);
+                        arm.position.set(Math.cos(angle) * 0.4, 0.15, Math.sin(angle) * 0.4);
+                        arm.castShadow = true;
+                        chairGroup.add(arm);
+
+                        const wheelGeometry = new THREE.CylinderGeometry(0.08, 0.08, 0.05);
+                        const wheel = new THREE.Mesh(wheelGeometry, poleMaterial);
+                        wheel.position.set(Math.cos(angle) * 0.4, 0.05, Math.sin(angle) * 0.4);
+                        wheel.rotation.z = Math.PI / 2;
+                        wheel.castShadow = true;
+                        chairGroup.add(wheel);
+                    }
+                }
+
+                chairGroup.position.set(pos.x, 0, pos.z);
+                scene.add(chairGroup);
+            });
+        }
+
+        // 면접관들 생성 (모바일 최적화)
+        function createInterviewers() {
+            const interviewerPositions = [
+                { x: -1.5, z: 2.5 },
+                { x: 0, z: 2.5 },
+                { x: 1.5, z: 2.5 }
+            ];
+
+            interviewerPositions.forEach((pos, i) => {
+                const group = new THREE.Group();
+                
+                const bodyGeometry = new THREE.BoxGeometry(0.9, 1.6, 0.4);
+                const bodyColors = [0x2c3e50, 0x34495e, 0x2c3e50];
+                const bodyMaterial = new THREE.MeshLambertMaterial({ color: bodyColors[i] });
+                const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
+                body.position.y = 2.3;
+                if (!isMobileDevice()) body.castShadow = true;
+                group.add(body);
+
+                const shirtGeometry = new THREE.BoxGeometry(0.7, 1.4, 0.35);
+                const shirtMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });
+                const shirt = new THREE.Mesh(shirtGeometry, shirtMaterial);
+                shirt.position.y = 2.25;
+                if (!isMobileDevice()) shirt.castShadow = true;
+                group.add(shirt);
+
+                const tieGeometry = new THREE.BoxGeometry(0.15, 0.8, 0.05);
+                const tieColors = [0xe74c3c, 0x3498db, 0x8e44ad];
+                const tieMaterial = new THREE.MeshLambertMaterial({ color: tieColors[i] });
+                const tie = new THREE.Mesh(tieGeometry, tieMaterial);
+                tie.position.set(0, 2.4, 0.2);
+                if (!isMobileDevice()) tie.castShadow = true;
+                group.add(tie);
+
+                const headGeometry = new THREE.SphereGeometry(0.32);
+                const headMaterial = new THREE.MeshLambertMaterial({ color: 0xFFDBAE });
+                const head = new THREE.Mesh(headGeometry, headMaterial);
+                head.position.y = 3.4;
+                if (!isMobileDevice()) head.castShadow = true;
+                group.add(head);
+
+                const hairColors = [0x4a4a4a, 0x2c1810, 0x8b4513];
+                const hairGeometry = new THREE.SphereGeometry(0.34);
+                const hairMaterial = new THREE.MeshLambertMaterial({ color: hairColors[i] });
+                const hair = new THREE.Mesh(hairGeometry, hairMaterial);
+                hair.position.y = 3.5;
+                hair.scale.y = 0.7;
+                if (!isMobileDevice()) hair.castShadow = true;
+                group.add(hair);
+
+                // 안경 (면접관 2번만, 모바일에서는 단순화)
+                if (i === 1 && !isMobileDevice()) {
+                    const glassGeometry = new THREE.RingGeometry(0.08, 0.12, 8);
+                    const glassMaterial = new THREE.MeshLambertMaterial({ 
+                        color: 0x000000,
+                        transparent: true,
+                        opacity: 0.3 
+                    });
+                    const leftLens = new THREE.Mesh(glassGeometry, glassMaterial);
+                    leftLens.position.set(-0.12, 3.42, 0.28);
+                    group.add(leftLens);
+                    
+                    const rightLens = new THREE.Mesh(glassGeometry, glassMaterial);
+                    rightLens.position.set(0.12, 3.42, 0.28);
+                    group.add(rightLens);
+                }
+
+                const armGeometry = new THREE.CylinderGeometry(0.08, 0.08, 1.3);
+                const armMaterial = new THREE.MeshLambertMaterial({ color: bodyColors[i] });
+                
+                const leftArm = new THREE.Mesh(armGeometry, armMaterial);
+                leftArm.position.set(-0.55, 2.3, 0);
+                if (!isMobileDevice()) leftArm.castShadow = true;
+                group.add(leftArm);
+
+                const rightArm = new THREE.Mesh(armGeometry, armMaterial);
+                rightArm.position.set(0.55, 2.3, 0);
+                if (!isMobileDevice()) rightArm.castShadow = true;
+                group.add(rightArm);
+
+                group.position.set(pos.x, 0, pos.z);
+                group.userData = { type: 'interviewer', id: i + 1 };
+                scene.add(group);
+            });
+        }
+
+        // 면접자(노현정) 생성 (사실적 디자인 + 모바일 최적화)
+        function createInterviewee() {
+            const group = new THREE.Group();
+            
+            // 몸통 (여성스러운 실루엣)
+            const bodyGeometry = new THREE.BoxGeometry(0.7, 1.5, 0.35);
+            bodyGeometry.scale(1, 1, 0.9); // 더 여성스러운 비율
+            const bodyMaterial = new THREE.MeshLambertMaterial({ color: 0x2c3e50 });
+            const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
+            body.position.y = 2.2;
+            if (!isMobileDevice()) body.castShadow = true;
+            group.add(body);
+
+            // 블라우스 (더 정교하게)
+            const blouseGeometry = new THREE.BoxGeometry(0.6, 1.3, 0.32);
+            const blouseMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });
+            const blouse = new THREE.Mesh(blouseGeometry, blouseMaterial);
+            blouse.position.y = 2.15;
+            if (!isMobileDevice()) blouse.castShadow = true;
+            group.add(blouse);
+
+            // 블라우스 칼라
+            const collarGeometry = new THREE.BoxGeometry(0.35, 0.12, 0.05);
+            const collar = new THREE.Mesh(collarGeometry, blouseMaterial);
+            collar.position.set(0, 2.85, 0.18);
+            if (!isMobileDevice()) collar.castShadow = true;
+            group.add(collar);
+
+            // 스카프/리본 (더 여성스럽게)
+            const scarfGeometry = new THREE.BoxGeometry(0.15, 0.08, 0.03);
+            const scarfMaterial = new THREE.MeshLambertMaterial({ color: 0xe74c3c });
+            const scarf = new THREE.Mesh(scarfGeometry, scarfMaterial);
+            scarf.position.set(0, 2.8, 0.2);
+            if (!isMobileDevice()) scarf.castShadow = true;
+            group.add(scarf);
+
+            // 작은 스카프 장식
+            const scarfTailGeometry = new THREE.BoxGeometry(0.05, 0.15, 0.02);
+            const scarfTail1 = new THREE.Mesh(scarfTailGeometry, scarfMaterial);
+            scarfTail1.position.set(-0.06, 2.7, 0.19);
+            scarfTail1.rotation.z = 0.3;
+            group.add(scarfTail1);
+
+            const scarfTail2 = new THREE.Mesh(scarfTailGeometry, scarfMaterial);
+            scarfTail2.position.set(0.06, 2.7, 0.19);
+            scarfTail2.rotation.z = -0.3;
+            group.add(scarfTail2);
+
+            // 머리 (더 사실적인 여성 얼굴형)
+            const headGeometry = new THREE.SphereGeometry(0.32);
+            headGeometry.scale(0.95, 1.1, 0.9); // 더 여성스러운 얼굴형
+            const headMaterial = new THREE.MeshLambertMaterial({ color: 0xfdbcb4 });
+            const head = new THREE.Mesh(headGeometry, headMaterial);
+            head.position.y = 3.25;
+            if (!isMobileDevice()) head.castShadow = true;
+            group.add(head);
+
+            // 얼굴 특징 - 눈 (더 큰 여성스러운 눈)
+            const eyeGeometry = new THREE.SphereGeometry(0.035);
+            const eyeMaterial = new THREE.MeshLambertMaterial({ color: 0x2c3e50 });
+            
+            const leftEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
+            leftEye.position.set(-0.07, 3.32, 0.29);
+            group.add(leftEye);
+            
+            const rightEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
+            rightEye.position.set(0.07, 3.32, 0.29);
+            group.add(rightEye);
+
+            // 눈썹
+            const eyebrowGeometry = new THREE.BoxGeometry(0.08, 0.015, 0.01);
+            const eyebrowMaterial = new THREE.MeshLambertMaterial({ color: 0x4a4a4a });
+            
+            const leftEyebrow = new THREE.Mesh(eyebrowGeometry, eyebrowMaterial);
+            leftEyebrow.position.set(-0.07, 3.37, 0.3);
+            group.add(leftEyebrow);
+            
+            const rightEyebrow = new THREE.Mesh(eyebrowGeometry, eyebrowMaterial);
+            rightEyebrow.position.set(0.07, 3.37, 0.3);
+            group.add(rightEyebrow);
+
+            // 코 (더 작고 여성스럽게)
+            const noseGeometry = new THREE.BoxGeometry(0.03, 0.05, 0.06);
+            const nose = new THREE.Mesh(noseGeometry, headMaterial);
+            nose.position.set(0, 3.24, 0.32);
+            group.add(nose);
+
+            // 입 (더 여성스럽게)
+            const mouthGeometry = new THREE.BoxGeometry(0.1, 0.02, 0.015);
+            const mouthMaterial = new THREE.MeshLambertMaterial({ color: 0xd63384 });
+            const mouth = new THREE.Mesh(mouthGeometry, mouthMaterial);
+            mouth.position.set(0, 3.18, 0.31);
+            group.add(mouth);
+
+            // 헤어스타일 (노현정 - 단정한 여성 단발)
+            const hairGeometry = new THREE.SphereGeometry(0.35);
+            hairGeometry.scale(1.1, 0.85, 1.05); // 여성스러운 단발 형태
+            const hairMaterial = new THREE.MeshLambertMaterial({ color: 0x2c1810 });
+            const hair = new THREE.Mesh(hairGeometry, hairMaterial);
+            hair.position.set(0, 3.4, -0.08);
+            if (!isMobileDevice()) hair.castShadow = true;
+            group.add(hair);
+
+            // 앞머리
+            const bangsGeometry = new THREE.BoxGeometry(0.4, 0.15, 0.2);
+            const bangs = new THREE.Mesh(bangsGeometry, hairMaterial);
+            bangs.position.set(0, 3.5, 0.15);
+            bangs.rotation.x = -0.3;
+            if (!isMobileDevice()) bangs.castShadow = true;
+            group.add(bangs);
+
+            // 옆머리
+            const sideHairGeometry = new THREE.BoxGeometry(0.15, 0.25, 0.2);
+            const leftSideHair = new THREE.Mesh(sideHairGeometry, hairMaterial);
+            leftSideHair.position.set(-0.25, 3.3, 0.1);
+            leftSideHair.rotation.z = 0.3;
+            group.add(leftSideHair);
+
+            const rightSideHair = new THREE.Mesh(sideHairGeometry, hairMaterial);
+            rightSideHair.position.set(0.25, 3.3, 0.1);
+            rightSideHair.rotation.z = -0.3;
+            group.add(rightSideHair);
+
+            // 귀걸이 (작은 액세서리)
+            const earringGeometry = new THREE.SphereGeometry(0.02);
+            const earringMaterial = new THREE.MeshLambertMaterial({ color: 0xffd700 });
+            
+            const leftEarring = new THREE.Mesh(earringGeometry, earringMaterial);
+            leftEarring.position.set(-0.3, 3.25, 0.15);
+            group.add(leftEarring);
+            
+            const rightEarring = new THREE.Mesh(earringGeometry, earringMaterial);
+            rightEarring.position.set(0.3, 3.25, 0.15);
+            group.add(rightEarring);
+
+            // 팔 (더 가늘고 여성스럽게)
+            const armGeometry = new THREE.CylinderGeometry(0.06, 0.07, 1.2);
+            const armMaterial = new THREE.MeshLambertMaterial({ color: 0x2c3e50 });
+            
+            const leftArm = new THREE.Mesh(armGeometry, armMaterial);
+            leftArm.position.set(-0.42, 2.2, 0);
+            leftArm.rotation.z = 0.1;
+            if (!isMobileDevice()) leftArm.castShadow = true;
+            group.add(leftArm);
+
+            const rightArm = new THREE.Mesh(armGeometry, armMaterial);
+            rightArm.position.set(0.42, 2.2, 0);
+            rightArm.rotation.z = -0.1;
+            if (!isMobileDevice()) rightArm.castShadow = true;
+            group.add(rightArm);
+
+            // 손 (더 작고 여성스럽게)
+            const handGeometry = new THREE.SphereGeometry(0.07);
+            const handMaterial = new THREE.MeshLambertMaterial({ color: 0xfdbcb4 });
+            
+            const leftHand = new THREE.Mesh(handGeometry, handMaterial);
+            leftHand.position.set(-0.32, 1.65, -0.4);
+            if (!isMobileDevice()) leftHand.castShadow = true;
+            group.add(leftHand);
+
+            const rightHand = new THREE.Mesh(handGeometry, handMaterial);
+            rightHand.position.set(0.32, 1.65, -0.4);
+            if (!isMobileDevice()) rightHand.castShadow = true;
+            group.add(rightHand);
+
+            // 손가락 디테일 (모바일이 아닐 때만)
+            if (!isMobileDevice()) {
+                const fingerGeometry = new THREE.CylinderGeometry(0.01, 0.01, 0.04);
+                for (let hand = 0; hand < 2; hand++) {
+                    for (let finger = 0; finger < 4; finger++) {
+                        const fingerMesh = new THREE.Mesh(fingerGeometry, handMaterial);
+                        const xPos = hand === 0 ? -0.32 : 0.32;
+                        fingerMesh.position.set(
+                            xPos + (finger - 1.5) * 0.015,
+                            1.62,
+                            -0.37
+                        );
+                        fingerMesh.rotation.x = Math.PI / 2;
+                        group.add(fingerMesh);
+                    }
+                }
+            }
+
+            // 가방 (더 정교하게)
+            const bagGeometry = new THREE.BoxGeometry(0.45, 0.55, 0.18);
+            const bagMaterial = new THREE.MeshLambertMaterial({ color: 0x8b4513 });
+            const bag = new THREE.Mesh(bagGeometry, bagMaterial);
+            bag.position.set(0.8, 0.28, -4);
+            if (!isMobileDevice()) bag.castShadow = true;
+            scene.add(bag);
+
+            // 가방 손잡이
+            const handleGeometry = new THREE.TorusGeometry(0.15, 0.02, 8, 16);
+            const handleMaterial = new THREE.MeshLambertMaterial({ color: 0x654321 });
+            const handle = new THREE.Mesh(handleGeometry, handleMaterial);
+            handle.position.set(0.8, 0.65, -4);
+            handle.rotation.x = Math.PI / 2;
+            if (!isMobileDevice()) handle.castShadow = true;
+            scene.add(handle);
+
+            // 가방 버클
+            const buckleGeometry = new THREE.BoxGeometry(0.08, 0.06, 0.02);
+            const buckleMaterial = new THREE.MeshLambertMaterial({ color: 0xffd700 });
+            const buckle = new THREE.Mesh(buckleGeometry, buckleMaterial);
+            buckle.position.set(0.8, 0.4, -3.91);
+            scene.add(buckle);
+
+            group.position.set(0, 0, -4);
+            group.userData = { type: 'interviewee', name: '노현정' };
+            scene.add(group);
+        }
+
+        // 컨트롤 설정 (마우스/터치 통합)
+        function setupControls(container) {
+            let isDragging = false;
+            let previousPosition = { x: 0, y: 0 };
+
+            // 마우스 이벤트
+            container.addEventListener('mousedown', (event) => {
+                isDragging = true;
+                previousPosition = { x: event.clientX, y: event.clientY };
+                event.preventDefault();
+            });
+
+            container.addEventListener('mousemove', (event) => {
+                if (isDragging) {
+                    const deltaX = event.clientX - previousPosition.x;
+                    const deltaY = event.clientY - previousPosition.y;
+                    
+                    updateCameraPosition(deltaX, deltaY);
+                    
+                    previousPosition = { x: event.clientX, y: event.clientY };
+                }
+            });
+
+            container.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+
+            container.addEventListener('mouseleave', () => {
+                isDragging = false;
+            });
+
+            // 휠 이벤트
+            container.addEventListener('wheel', (event) => {
+                event.preventDefault();
+                const direction = event.deltaY > 0 ? 1 : -1;
+                const distance = camera.position.distanceTo(cameraTarget);
+                
+                if ((direction > 0 && distance < 30) || (direction < 0 && distance > 3)) {
+                    camera.position.addScaledVector(
+                        camera.position.clone().sub(cameraTarget).normalize(),
+                        direction * 1
+                    );
+                }
+            }, { passive: false });
+
+            // 터치 이벤트 (모바일)
+            let touchStart = null;
+            let initialDistance = 0;
+            let initialCameraDistance = 0;
+
+            container.addEventListener('touchstart', (event) => {
+                event.preventDefault();
+                
+                if (event.touches.length === 1) {
+                    // 단일 터치 - 회전
+                    touchStart = {
+                        x: event.touches[0].clientX,
+                        y: event.touches[0].clientY
+                    };
+                } else if (event.touches.length === 2) {
+                    // 더블 터치 줌
+                    const dx = event.touches[0].clientX - event.touches[1].clientX;
+                    const dy = event.touches[0].clientY - event.touches[1].clientY;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (initialDistance > 0) {
+                        const scale = distance / initialDistance;
+                        const newDistance = Math.max(3, Math.min(30, initialCameraDistance / scale));
+                        
+                        const direction = camera.position.clone().sub(cameraTarget).normalize();
+                        camera.position.copy(cameraTarget).add(direction.multiplyScalar(newDistance));
+                    }
+                }
+            }, { passive: false });
+
+            container.addEventListener('touchend', (event) => {
+                event.preventDefault();
+                touchStart = null;
+                initialDistance = 0;
+            }, { passive: false });
+        }
+
+        // 카메라 위치 업데이트 공통 함수
+        function updateCameraPosition(deltaX, deltaY) {
+            const spherical = new THREE.Spherical();
+            spherical.setFromVector3(camera.position.clone().sub(cameraTarget));
+            spherical.theta -= deltaX * 0.005;
+            spherical.phi += deltaY * 0.005;
+            spherical.phi = Math.max(0.1, Math.min(Math.PI - 0.1, spherical.phi));
+            
+            camera.position.setFromSpherical(spherical).add(cameraTarget);
+            camera.lookAt(cameraTarget);
+        }
+
+        // 윈도우 리사이즈
+        function onWindowResize() {
+            if (camera && renderer) {
+                const container = document.getElementById('canvas-container');
+                camera.aspect = container.clientWidth / container.clientHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(container.clientWidth, container.clientHeight);
+            }
+        }
+
+        // 애니메이션 루프 (모바일 최적화)
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            if (renderer && scene && camera) {
+                renderer.render(scene, camera);
+            }
+        }
+
+        // 현재 질문 표시
+        function showCurrentQuestion() {
+            if (currentQuestionIndex < interviewQuestions.length) {
+                const question = interviewQuestions[currentQuestionIndex];
+                
+                const avatars = ['👨‍💼', '👨‍🏫', '👩‍💼'];
+                const avatarIndex = (question.interviewer - 1) % avatars.length;
+                
+                const interviewerAvatar = document.getElementById('interviewerAvatar');
+                const bubbleInterviewer = document.getElementById('bubbleInterviewer');
+                const bubbleQuestion = document.getElementById('bubbleQuestion');
+                const bubbleCategory = document.getElementById('bubbleCategory');
+                
+                if (interviewerAvatar) {
+                    interviewerAvatar.textContent = avatars[avatarIndex];
+                }
+                if (bubbleInterviewer) {
+                    bubbleInterviewer.textContent = question.interviewerName;
+                }
+                if (bubbleQuestion) {
+                    bubbleQuestion.textContent = question.text;
+                }
+                
+                const categoryText = `평정요소: ${question.category.replace('·', ', ')}`;
+                const questionNumber = `Q${currentQuestionIndex + 1}/${interviewQuestions.length}`;
+                
+                if (bubbleCategory) {
+                    bubbleCategory.textContent = `${questionNumber} | ${categoryText}`;
+                }
+                
+                updateQuestionsList();
+                updateNavigationButtons();
+                
+                // 현재 질문에 저장된 답변이 있으면 표시
+                if (myAnswers[currentQuestionIndex]) {
+                    // 저장된 답변이 있음을 조용히 확인 (콘솔 출력 없이)
+                }
+            }
+        }
+
+        // 질문 목록 생성
+        function generateQuestionsList() {
+            const questionsList = document.getElementById('questionsList');
+            questionsList.innerHTML = '';
+            
+            interviewQuestions.forEach((question, index) => {
+                const questionItem = document.createElement('div');
+                questionItem.className = 'question-item';
+                questionItem.id = `question-${index}`;
+                
+                questionItem.innerHTML = `
+                    <div class="question-number">Q${index + 1}</div>
+                    <div class="question-content">${question.text}</div>
+                    <div style="font-size: 0.75em; color: #7f8c8d; margin-top: 5px; font-weight: bold;">
+                        평정요소: ${question.category.replace('·', ', ')} | ${question.interviewerName}
+                    </div>
+                `;
+                
+                // 터치 이벤트 추가 (모바일 최적화)
+                questionItem.addEventListener('click', () => {
+                    currentQuestionIndex = index;
+                    showCurrentQuestion();
+                    updateQuestionsList();
+                    closePanel('questions');
+                });
+                
+                // 터치 피드백
+                questionItem.addEventListener('touchstart', () => {
+                    questionItem.style.transform = 'scale(0.98)';
+                });
+                
+                questionItem.addEventListener('touchend', () => {
+                    questionItem.style.transform = '';
+                });
+                
+                questionsList.appendChild(questionItem);
+            });
+            
+            updateQuestionsList();
+        }
+
+        // 질문 목록 업데이트
+        function updateQuestionsList() {
+            interviewQuestions.forEach((_, index) => {
+                const questionItem = document.getElementById(`question-${index}`);
+                if (questionItem) {
+                    questionItem.className = 'question-item';
+                    
+                    if (index < currentQuestionIndex) {
+                        questionItem.classList.add('completed');
+                    } else if (index === currentQuestionIndex) {
+                        questionItem.classList.add('current');
+                    }
+                }
+            });
+        }
+
+        // 페이지 로드 시 초기화
+        window.addEventListener('load', function() {
+            // 답변 패널들 초기화 (처음에 숨기기)
+            initializeAnswerPanels();
+            
+            // 세션 스토리지에서 답변 불러오기 (가장 먼저 실행)
+            loadAnswersFromStorage();
+            
+            // URL에서 답변 불러오기
+            loadFromUrl();
+            
+            // 모바일 최적화 적용
+            optimizeForMobile();
+            
+            // 질문 목록 생성
+            generateQuestionsList();
+            
+            // Three.js 초기화
+            initThreeJS();
+            
+            // 답변보기 버튼이 제대로 있는지 확인
+            const showExampleBtn = document.getElementById('showExampleBtn');
+            
+            // 모바일에서 주소창 숨기기
+            if (isMobileDevice()) {
+                setTimeout(() => {
+                    window.scrollTo(0, 1);
+                }, 100);
+            }
+            
+            // 모든 함수를 window 객체에 등록 (안전장치)
+            window.showAnswerPanels = showAnswerPanels;
+            window.showExampleAnswer = showExampleAnswer;
+            window.showMyAnswer = showMyAnswer;
+            window.hideExampleAnswer = hideExampleAnswer;
+            window.hideMyAnswer = hideMyAnswer;
+            window.closeExampleAnswerPanel = closeExampleAnswerPanel;
+            window.closeMyAnswerPanel = closeMyAnswerPanel;
+            window.updateAnswerButtonState = updateAnswerButtonState;
+            window.saveMyAnswerForce = saveMyAnswerForce;
+            window.cancelMyEdit = cancelMyEdit;
+            window.toggleMyEditMode = toggleMyEditMode;
+        });
+
+
+
+        // 답변 패널들 초기에 숨기기 - CSS 클래스 방식으로 변경
+        function initializeAnswerPanels() {
+            const exampleAnswerBubbleEl = document.getElementById('exampleAnswerBubble');
+            const myAnswerBubbleEl = document.getElementById('myAnswerBubble');
+            
+            if (exampleAnswerBubbleEl) {
+                exampleAnswerBubbleEl.classList.remove('show');
+                exampleAnswerBubbleEl.classList.add('force-hidden');
+            }
+            
+            if (myAnswerBubbleEl) {
+                myAnswerBubbleEl.classList.remove('show');
+                myAnswerBubbleEl.classList.add('force-hidden');
+            }
+        }
+
+        // ESC 키와 백 버튼으로 패널 닫기
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                if (document.getElementById('userIdModal').style.display === 'flex') {
+                    hideUserIdModal();
+                } else {
+                    closeAllPanels();
+                    hideExampleAnswer();
+                    hideMyAnswer();
+                }
+            }
+        });
+
+        // 모바일 백 버튼 처리
+        window.addEventListener('popstate', function(event) {
+            if (activePanel) {
+                closeAllPanels();
+                event.preventDefault();
+            }
+        });
+
+        // 화면 방향 변경 처리
+        window.addEventListener('orientationchange', function() {
+            setTimeout(() => {
+                onWindowResize();
+                // 모바일에서 주소창 다시 숨기기
+                if (isMobileDevice()) {
+                    window.scrollTo(0, 1);
+                }
+            }, 100);
+        });
+
+        // 모바일 터치 스크롤 방지 (캔버스 영역에서)
+        document.getElementById('canvas-container').addEventListener('touchmove', function(event) {
+            event.preventDefault();
+        }, { passive: false });
+
+        // 모바일에서 줌 방지
+        document.addEventListener('gesturestart', function(event) {
+            event.preventDefault();
+        });
+
+        document.addEventListener('gesturechange', function(event) {
+            event.preventDefault();
+        });
+
+        document.addEventListener('gestureend', function(event) {
+            event.preventDefault();
+        });
+
+        // 더블탭 줌 방지
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', function(event) {
+            const now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
+
+        // 모바일에서 성능 최적화를 위한 추가 설정
+        if (isMobileDevice()) {
+            // 불필요한 애니메이션 비활성화
+            document.querySelectorAll('*').forEach(element => {
+                element.style.webkitBackfaceVisibility = 'hidden';
+                element.style.webkitPerspective = '1000';
+                element.style.webkitTransform = 'translate3d(0,0,0)';
+            });
+            
+            // 스크롤 성능 향상
+            document.body.style.webkitOverflowScrolling = 'touch';
+        }
+
+        // PWA 관련 설정
+        if ('serviceWorker' in navigator && isMobileDevice()) {
+            window.addEventListener('load', function() {
+                // 이미 PWA 안내를 보았는지 확인 (메모리에서)
+                if (!window.pwaGuideShown) {
+                    showPWAInstallGuide();
+                }
+            });
+        }
+
+        // 화면 꺼짐 방지
+        if ('wakeLock' in navigator && isMobileDevice()) {
+            let wakeLock = null;
+            
+            async function requestWakeLock() {
+                try {
+                    wakeLock = await navigator.wakeLock.request('screen');
+                } catch (err) {
+                    // 조용히 실패 처리
+                }
+            }
+            
+            // 면접 시작 시 화면 꺼짐 방지
+            const originalStartInterview = startInterview;
+            startInterview = function() {
+                requestWakeLock();
+                originalStartInterview();
+            };
+        }
+    </script>
+</body>
+</html>
+                        y: event.touches[0].clientY
+                    };
+                } else if (event.touches.length === 2) {
+                    // 더블 터치 - 줌
+                    const dx = event.touches[0].clientX - event.touches[1].clientX;
+                    const dy = event.touches[0].clientY - event.touches[1].clientY;
+                    initialDistance = Math.sqrt(dx * dx + dy * dy);
+                    initialCameraDistance = camera.position.distanceTo(cameraTarget);
+                }
+            }, { passive: false });
+
+            container.addEventListener('touchmove', (event) => {
+                event.preventDefault();
+                
+                if (event.touches.length === 1 && touchStart) {
+                    // 단일 터치 회전
+                    const deltaX = event.touches[0].clientX - touchStart.x;
+                    const deltaY = event.touches[0].clientY - touchStart.y;
+                    
+                    updateCameraPosition(deltaX * 0.5, deltaY * 0.5);
+                    
+                    touchStart = {
+                        x: event.touches[0].clientX,
+                
